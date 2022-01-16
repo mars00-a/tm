@@ -1,0 +1,146 @@
+body{
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+/*页面头部*/
+header{
+    position: relative;
+    margin: 0 auto;
+    width: 1500px;
+    height:80px
+}
+#tm_logo{
+    width: 300px;
+    height: 40px;
+    position: absolute;
+    left: 30px;
+    top: 20px;
+}
+
+
+/*页面主题部分*/
+section{
+    position: relative;
+    margin: 0 auto;
+    width: 1500px;
+    height: 620px;
+}
+img[class="login1"]{
+    position: absolute;
+    left:175px;
+    width: 1150px;
+    height: 620px;
+}
+/*设置登录界面背景板上的白板*/
+span[id="login0"]{
+    position: absolute;
+    background-color: white;
+    left: 920px;
+    top: 100px;
+    width: 300px;
+    height: 260px;
+    font-weight: bolder;
+    padding: 50px 25px 80px 25px;
+}
+img[class="login2"]{
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    left: 945px;
+    top: 200px;
+}
+input[id="login2"]{
+    position: absolute;
+    height: 30px;
+    width: 260px;
+    left: 980px;
+    top: 200px;
+}
+span[id='us']{
+    left: 985px;
+    top: 235px;
+    font-size: 0.5em;
+    color: #ad1a03;
+    position: absolute;
+}
+img[class="login3"]{
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    left: 945px;
+    top: 260px;
+}
+input[id="login3"]{
+    position: absolute;
+    height: 30px;
+    width: 260px;
+    left: 980px;
+    top: 260px;
+}
+span[id='ps']{
+    left: 985px;
+    top: 295px;
+    font-size: 0.5em;
+    color: #ad1a03;
+    position: absolute;
+}
+div[id="login4"]{
+    position: absolute;
+    left: 950px;
+    top: 315px;
+    color: #a14417;
+    font-size: 0.5em;
+}
+#login5 a{
+    position: absolute;
+    text-decoration: none;
+    color:gray;
+    font-size: 0.5em;
+}
+#login6{
+    left: 950px;
+    top: 350px;
+}
+#login6+a{
+    left: 1200px;
+    top: 350px;
+}
+#login7{
+    position: absolute;
+    left: 953px;
+    top: 400px;
+    color: white;
+    font-size: 1em;
+    line-height: 26px;
+    text-align:center;
+    text-decoration: none;
+    background: #dd0500;
+    border-radius: 5px;
+    width: 295px;
+    height: 35px;
+}
+
+#a1{
+    position: absolute;
+    top: 870px;
+    background: gray;
+    width: 100%;
+    height: 0.005em;
+}
+#a2{
+    position: absolute;
+    top: 1086px;
+    background: red;
+    width: 100%;
+    height: 0.5em;
+}
+#a3{
+    position: absolute;
+    top: 1089px;
+    background: black;
+    width: 100%;
+    height: 250px;
+}
+
