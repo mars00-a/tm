@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="922861b9-4733-494a-b02f-cf1010c61257" name="默认更改列表" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="FxmlFile" />
+        <option value="Interface" />
+        <option value="Enum" />
+        <option value="HTML File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="userSettingsFile" value="E:\apache2.4\apache-maven-3.6.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="25avv424QxMxGrzPqSeRkcC9Xwk" />
+  <component name="ProjectViewState">
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RebelAgentSelection">
+    <selection>jr</selection>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\IDEA\IDEA PROGRAM\tmall_springboot" />
+      <recent name="E:\IDEA\IDEA PROGRAM\tmall_springboot\src\main\resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.tmall.utils" />
+      <recent name="com.tmall.es" />
+      <recent name="com.tmall.bean" />
+      <recent name="com.tmall.exception" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\IDEA\IDEA PROGRAM\tmall_springboot\src\main\resources\template" />
+      <recent name="E:\IDEA\IDEA PROGRAM\tmall_springboot\src\main\resources\static" />
+      <recent name="E:\IDEA\IDEA PROGRAM\tmall_springboot\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.EsJpaTest.findDocument">
+    <configuration name="EsApiTest.GetIndex" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="tmall_springboot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.EsApiTest" />
+      <option name="METHOD_NAME" value="GetIndex" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EsJpaTest.findDocument" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="tmall_springboot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.EsJpaTest" />
+      <option name="METHOD_NAME" value="findDocument" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RedisTest.get" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="tmall_springboot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.RedisTest" />
+      <option name="METHOD_NAME" value="get" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="tmall_springboot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tmall.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.tmall.MainApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.EsJpaTest.findDocument" />
+        <item itemvalue="Spring Boot.MainApplication" />
+        <item itemvalue="JUnit.RedisTest.get" />
+        <item itemvalue="JUnit.EsApiTest.GetIndex" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="922861b9-4733-494a-b02f-cf1010c61257" name="默认更改列表" comment="" />
+      <created>1645778238883</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1645778238883</updated>
+      <workItem from="1645778243077" duration="18974000" />
+      <workItem from="1645949346883" duration="20954000" />
+      <workItem from="1646496213325" duration="15667000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="361" y="90" key="#Inspections" timestamp="1646122297820">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="361" y="90" key="#Inspections/0.0.1536.864@0.0.1536.864" timestamp="1646122297820" />
+    <state x="223" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1645945414562">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="223" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864@0.0.1536.864" timestamp="1645945414562" />
+    <state x="817" y="195" key="#com.intellij.ide.util.MemberChooser" timestamp="1646329312671">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="817" y="195" key="#com.intellij.ide.util.MemberChooser/0.0.1536.864@0.0.1536.864" timestamp="1646329312671" />
+    <state x="558" y="337" key="#com.intellij.javaee.module.view.common.J2EE.J2EEDeploymentDescriptorLocationPanel.changeDDPath" timestamp="1645950213607">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="558" y="337" key="#com.intellij.javaee.module.view.common.J2EE.J2EEDeploymentDescriptorLocationPanel.changeDDPath/0.0.1536.864@0.0.1536.864" timestamp="1645950213607" />
+    <state x="549" y="187" key="FileChooserDialogImpl" timestamp="1645778273180">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="549" y="187" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1645778273180" />
+    <state width="1493" height="341" key="GridCell.Tab.0.bottom" timestamp="1646591659926">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="341" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1646591659926" />
+    <state width="1493" height="341" key="GridCell.Tab.0.center" timestamp="1646591659926">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="341" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1646591659926" />
+    <state width="1493" height="341" key="GridCell.Tab.0.left" timestamp="1646591659925">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="341" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1646591659925" />
+    <state width="1493" height="341" key="GridCell.Tab.0.right" timestamp="1646591659926">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="341" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1646591659926" />
+    <state width="1493" height="341" key="GridCell.Tab.1.bottom" timestamp="1646591212336">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="341" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1646591212336" />
+    <state width="1493" height="341" key="GridCell.Tab.1.center" timestamp="1646591212336">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="341" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1646591212336" />
+    <state width="1493" height="341" key="GridCell.Tab.1.left" timestamp="1646591212336">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="341" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1646591212336" />
+    <state width="1493" height="341" key="GridCell.Tab.1.right" timestamp="1646591212336">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="341" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1646591212336" />
+    <state x="270" y="13" key="SettingsEditor" timestamp="1645950887471">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="270" y="13" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1645950887471" />
+    <state x="437" y="30" key="spring file set editor" timestamp="1645897601352">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="437" y="30" key="spring file set editor/0.0.1536.864@0.0.1536.864" timestamp="1645897601352" />
+  </component>
+</project>

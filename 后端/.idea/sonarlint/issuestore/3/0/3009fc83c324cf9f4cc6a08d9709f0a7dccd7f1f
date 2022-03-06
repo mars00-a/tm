@@ -1,0 +1,9 @@
+
+Z	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(Ϊγ—
+[	java:S112&"FDefine and throw a dedicated exception instead of using a generic one.(²Νΐό
+
+java:S1130"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(Ϊγ—
+B
+java:S3457"%String contains no format specifiers.( ΰάμ8©‘σσ/
+‰
+java:S1130&"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(²Νΐό8§Νÿςσ/
