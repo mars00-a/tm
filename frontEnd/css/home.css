@@ -1,0 +1,311 @@
+*{
+    margin:0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+input:focus{
+    outline: none;
+}
+.clear{
+    clear: both;
+}
+body{
+    margin: 0 auto;
+}
+a{
+    color:white;
+    text-decoration:none;
+}
+.icomoon{
+    font-family: icomoon, serif;
+}
+#rollPicture{
+    width: 1085px;
+    height: 493px;
+    display: inline-block;
+    position: absolute;
+    top: 37px;
+    right:0;
+    overflow: hidden;
+}
+
+
+
+
+.search{
+    width: 1000px;
+    position: relative;
+    margin: 0 auto;
+}.search a img{
+    position: absolute;
+    left: -55px;
+    top:-40px;
+    display: block;
+ }
+.search .searchbox{
+    position: relative;
+    left: 298px;
+    top: 10px;
+    width: 295px;
+    height: 70px;
+    margin-top: 52px;
+}
+
+.search .searchbox input{
+    display: block;
+    border: 3px solid rgb(196, 0, 0);
+    height: 44px;
+    width: 275px;
+    padding-left: 4px;
+}
+.search .searchbox button{
+    position: relative;
+    top: -44px;
+    left: 273px;
+    display: block;
+    border: 0;
+    color: white;
+    background-color: rgb(196, 0, 0);
+    height: 44px;
+    width: 104px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.search .searchbox button:hover{
+    cursor: pointer;
+}
+.search .searchbox .inputFour{
+    position: relative;
+    top: -40px;
+    width: 400px;
+    right:0;
+}
+.search .searchbox .inputFour a{
+    display: inline-block;
+    float: left;
+}
+.search .searchbox .inputFour li{
+    color: gray;
+    font-size: 14px;
+    display: inline-block;
+    margin-right: 39px;
+    margin-top: 3px;
+}
+.search .searchbox .inputFour li:hover{
+    color: rgb(196, 0, 0);
+    cursor:pointer;
+}
+.search .searchbox .inputFour a:hover{
+    color: rgb(196, 0, 0);
+}
+
+
+.rollPicture{
+    margin-top: 20px;
+    position: relative;
+    background: #E8E8E8;
+}
+.rollPicture .smallNav{
+
+    margin-top: 15px;
+    background: #DD2727;
+    color: white;
+    line-height: 36px;
+    width: 100%;
+}
+.rollPicture .smallNav .div1{
+    position: relative;
+    display: block;
+    margin:0 auto;
+    width:1000px;
+}
+
+.rollPicture .span1{
+    position: relative;
+    left:-25px;
+    font-size: 16px;
+    font-weight: bold;
+    display: inline-block;
+    padding-left: 10px;
+    width: 190px;
+    background: #C60A0A;
+    font-family: icomoon, serif;
+}
+.rollPicture .smallNav .div1 .span1:hover{
+    cursor: default;
+}
+.rollPicture .span2{
+    font-family: icomoon, serif;
+
+}
+.rollPicture .div1 a span{
+    display: inline-block;
+    font-size: 15px;
+    margin-left: 34px;
+}
+.rollPicture .div1 span:hover{
+    cursor: pointer;
+}
+.rollPicture .smallNav .div1 .mydisplay{
+    display: none;
+}
+.rollPicture .smallNav .div1 #img1{
+    display: inline-block;
+    position: absolute;
+    top: -8px;
+    left: 267px;
+    width: 30px;
+}
+.rollPicture .smallNav .div1 #img2{
+    display: inline-block;
+    position: absolute;
+    top: -8px;
+    left: 390px;
+    width: 30px;
+}
+.rollPicture .smallNav .div1 #img3{
+    display: inline-block;
+    position: absolute;
+    top: -8px;
+    left: 495px;
+    width: 30px;
+}
+.rollPicture .smallNav .div1 #img4{
+    display: inline-block;
+    position: absolute;
+    top: -8px;
+    left: 579px;
+    width: 30px;
+}
+.rollPicture .smallNav .div1 #img5{
+    display: inline-block;
+    position: absolute;
+    top: -8px;
+    left: 648px;
+    width: 30px;
+}
+.rollPicture .smallNav .div1 #img6{
+    display: inline-block;
+    position: absolute;
+    top: -8px;
+    left: 730px;
+    width: 30px;
+}
+
+
+.rollPicture .ifo .list{
+    margin: 0 auto;
+    width: 1050px;
+}
+.rollPicture .ifo .list li a{
+    padding: 7px 10px;
+    display: block;
+    font-size: 14px;
+    background: #E2E2E3;
+    color: black;
+    width: 180px;
+}
+.rollPicture .ifo .list li a:hover{
+    background: white;
+    color: #87CEFA;
+}
+
+.mylist{
+    z-index: 2;
+    position: absolute;
+    width:1085px;
+    height: 494px;
+    top: 37px;
+    left: 433px;
+    background-color: white;
+}
+.mylist ul{
+    display: inline-block;
+    border-bottom: 1px #999999 dashed;
+    margin-left: 80px;
+    width:740px;
+}
+.mylist ul li{
+    display:inline-block;
+    margin: 20px 10px;
+    font-size: 14px;
+}
+.mylist ul li a{
+    color:#999999;
+}
+.mylist ul li a:hover{
+    color: #C40000;
+}
+.blue{
+    color: #87CEFA!important;
+}
+
+.commodity{
+    position: relative;
+    margin:10px auto;
+    width:1050px;
+    background-color: #F5F5F5;
+}
+.commodity .commoditylist{
+    position: relative;
+    width: 100%;
+    background-color: #F5F5F5;
+}
+.commodity .commoditylist .spantitle{
+    display: block;
+    margin-top: 50px;
+    margin-left: 10px;
+    padding-left: 30px;
+    border-left: 5px solid #19C8A9;
+    color: #646464;
+    font-size: 16px;
+    font-weight: bold;
+}
+.commodity .commoditylist .comm{
+    position: relative;
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 10px;
+    background-color: white;
+    border: 1px solid white;
+}
+.commodity .commoditylist .comm:hover{
+    border: 1px solid #C60A0A;
+}
+.commodity .commoditylist .comm img{
+    width:190px;
+}
+
+.commodity .commoditylist .comm .span1{
+    width: 160px;
+    display:block;
+    border:0;
+    font-size: 12px;
+    color: #666666;
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.commodity .commoditylist .comm .red{
+    color: #FF003A;
+    margin-left: 15px;
+    line-height: 40px;
+}
+
+
+.end{
+    position: relative;
+    margin:10px auto;
+    width:1050px;
+    background-color: #F5F5F5;
+    line-height:800px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.end img{
+    display: block;
+    position: relative;
+    left: 490px;
+}

@@ -1,0 +1,84 @@
+<html lang="chinese">
+<head>
+    <meta charset="utf-8">
+    <title>搜索页面</title>
+    <script src = ../javascript/jquery.min.js> </script>
+    <script src = ../javascript/axios.min.js> </script>
+    <script type="text/javascript" src="../javascript/search.js"> </script>
+    <link rel="stylesheet" href="../css/search.css ">
+    <style>
+        @font-face {
+            font-family: 'icomoon';
+            src: url('fonts/icomoon.eot?qv4n05');
+            src: url('fonts/icomoon.eot?qv4n05#iefix') format('embedded-opentype'),
+            url('fonts/icomoon.ttf?qv4n05') format('truetype'),
+            url('fonts/icomoon.woff?qv4n05') format('woff'),
+            url('fonts/icomoon.svg?qv4n05#icomoon') format('svg');
+            font-weight: normal;
+            font-style: normal;
+            font-display: block;
+        }
+    </style>
+</head>
+
+<body>
+<!-- 最上方导航栏 -------------------------------------------->
+<div id="nav">
+</div>
+<!-- 搜索框那一行 ------------------------------------------->
+<div class="search">
+    <a href="#"><img src="img/logo.gif"></a>
+    <div class="searchBox">
+        <input id="keyword" type="text" placeholder="搜索内容">
+        <a href="#"><button onclick = "return check()" id="button" type="submit">搜索</button></a>
+        <div class="inputFour">
+            <ul>
+                <a href="#">
+                    <li>平衡车</li>
+                </a>
+                <a href="#">
+                    <li>|  扫地机器人</li>
+                </a>
+                <a href="#">
+                    <li>|  原汁机</li>
+                </a>
+                <a href="#">
+                    <li>|  冰箱</li>
+                </a>
+            </ul>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="clear"></div>
+</div>
+
+<div id="father" class="commodity">
+
+
+    <div class="commoditylist">
+
+        <a class="mouldA" href="#">
+            <img class="mouldImg" src="img/comm1.jpg" alt="加载失败">
+            <span class="mouldSpan span1">
+                    [热销]夏普屏PANDA/能猫LE39D71S
+            </span>
+            <span class="mouldRed red">
+                    1,874.25
+            </span>
+        </a>
+
+    </div>
+
+
+</div>
+<div class="end">
+    <img src="img/end.png" alt="加载失败">
+</div>
+<!-- 底部信息栏白色那部分 -------------------------------------->
+<div id="footer1">
+</div>
+<!-- 底部信息栏黑色那部分 --------------------------------------->
+<div id = "footer2">
+</div>
+</body>
+</html>
