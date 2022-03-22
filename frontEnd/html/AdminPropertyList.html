@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/AdminProperlyList.css">
+</head>
+<body>
+<span class="black"></span>
+<header>
+    <img src="img/tmallbuy.png" alt="" class="tmallbuy">
+    <ul class="a2">
+        <li><a href="AdminCategoryList.html">天猫后台</a></li>
+        <li><a href="AdminCategoryList.html">分类管理</a></li>
+        <li><a href="AdminUserList.html">用户管理</a></li>
+        <li><a href="">订单管理</a></li>
+    </ul>
+</header>
+<section>
+    <ol class="breadcrumb">
+        <li><a href="AdminCategoryList.html">所有分类</a></li>
+        <li><a href="" id="things_name">平板电视</a></li>
+        <li class="active"> 属性管理</li>
+    </ol>
+    <table id="property">
+        <thead>
+        <tr>
+            <td id="ID"><strong>ID</strong></td>
+            <td id="attribute_name"><strong>属性名称</strong></td>
+            <td id="edit"><strong>编辑</strong></td>
+            <td id="delete"><strong>删除</strong></td>
+        </tr>
+        </thead>
+        <tbody id="Tbody">
+        <tr>
+            <td id="ID1">1</td>
+            <td id="attribute_name1">1</td>
+            <td id="edit1">
+                <a href="AdminPropertyEdit.html">
+                    <img src="img/编辑.png">
+                </a>
+            </td>
+            <td id="delete1" onclick="Delete()">
+                <a href="">
+                    <img src="img/删除.png">
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td id="ID2">1</td>
+            <td id="attribute_name2">1</td>
+            <td id="edit2">
+                <a href="AdminPropertyEdit.html">
+                    <img src="img/编辑.png">
+                </a>
+            </td>
+            <td id="delete2" onclick="Delete()">
+                <a href="">
+                    <img src="img/删除.png">
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td id="ID3">1</td>
+            <td id="attribute_name3">1</td>
+            <td id="edit3">
+                <a href="AdminPropertyEdit.html">
+                    <img src="img/编辑.png">
+                </a>
+            </td>
+            <td id="delete3" onclick="Delete()">
+                <a href="">
+                    <img src="img/删除.png">
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td id="ID4">1</td>
+            <td id="attribute_name4">1</td>
+            <td id="edit4">
+                <a href="AdminPropertyEdit.html">
+                    <img src="img/编辑.png">
+                </a>
+            </td>
+            <td id="delete4" onclick="Delete()">
+                <a href="">
+                    <img src="img/删除.png">
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td id="ID5">1</td>
+            <td id="attribute_name5">1</td>
+            <td id="edit5">
+                <a href="AdminPropertyEdit.html">
+                    <img src="img/编辑.png">
+                </a>
+            </td>
+            <td id="delete5" onclick="Delete()">
+                <a href="">
+                    <img src="img/删除.png">
+                </a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <ul id="page">
+        <li><a id="fisrt" class="first" href="" onclick="return update(1)"> << </a></li>
+        <li><a id="before" class="before" href="" onclick="return before()"> < </a></li>
+        <li><a id="page1" href="" onclick="return update(this.text)"> 1 </a></li>
+        <li><a id="page2" href="" onclick="return update(this.text)"> 2 </a></li>
+        <li><a id="page3" href="" onclick="return update(this.text)"> 3 </a></li>
+        <li><a id="page4" href="" onclick="return update(this.text)"> 4 </a></li>
+        <li><a id="page5" href="" onclick="return update(this.text)"> 5 </a></li>
+        <li><a id="next" href="" onclick="return next()"> > </a></li>
+        <li><a id="finaly" href="" onclick="return last()"> >> </a></li>
+    </ul>
+    <div id="new_class">新增分类</div>
+    <form method="post" id="addForm">
+        <table class="addTable">
+            <tbody><tr>
+                <td>属性名称</td>
+                <td><input id="name" name="name" type="text" class="form-control"></td>
+            </tr>
+            <tr class="submitTR">
+                <td colspan="2" align="center">
+                    <button type="submit" class="btn">提 交</button>
+                </td>
+            </tr>
+            </tbody></table>
+    </form>
+</section>
+<script src="../javascript/AdminProperlyList.js"></script>
+</body>
+</html>
