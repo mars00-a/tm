@@ -1,0 +1,162 @@
+body{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+/*页面的头部*/
+header{
+    position: relative;
+    margin: 0 auto;
+    width: 1500px;
+    height:65px;
+}
+.black{
+    position: absolute;
+    width: 100%;
+    height: 53px;
+    background: black;
+}
+.tmallbuy{
+    position: absolute;
+    width: 45px;
+    height: 45px;
+}
+.a2{
+    margin-top: 12px;
+    position: absolute;
+    left: 25px;
+}
+.a2 li{
+    font-size: 18px;
+    list-style: none;
+    float: left;
+    margin-right: 32px;
+}
+a{
+    text-decoration: none;
+    color: #9d9d9d;
+}
+/*页面主体内容*/
+section{
+    position: relative;
+    margin: 0 auto;
+    width: 1500px;
+    height:80px;
+}
+.label{
+    position: absolute;
+    background-color: #5bc0de;
+    width: 60px;
+    line-height: 1.5em;
+    font-size: 75%;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    vertical-align: baseline;
+    left: 28px;
+    border-radius: 0.3em;
+}
+#category{
+    position: absolute;
+    top: 50px;
+    left: 28px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    border: 1px solid #ddd;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+td{
+    padding-left: 5px;
+    background: #f7f7f7;
+    height: 45px;
+    border: 1px solid #ddd;
+}
+thead tr td{
+    height: 28px;
+    background: #dff0d8;
+}
+#Body img{
+    width: 15px;
+    height: 16px;
+}
+#ID{
+    width: 50px;
+}
+#picture{
+    width: 850px;
+}
+#class{
+    width: 120px;
+}
+#attribute{
+    width: 120px;
+}
+#product{
+    width: 120px;
+}
+#edit{
+    width: 70px;
+}
+#delete{
+    width: 70px;
+}
+#page{
+    position: absolute;
+    top: 350px;
+    left: 550px;
+}
+#page li{
+    float: left;
+    list-style: none;
+    font-size: 14px;
+    padding: 6px 10px;
+    border: 1px solid #ddd;
+}
+#page li a{
+    color: #0052ee;
+}
+#new_class{
+    position: absolute;
+    top: 420px;
+    left: 550px;
+    font-size: 14px;
+    background: #fcf8e3;
+    color: #8a6d3b;
+    width: 360px;
+    height: 20px;
+    padding: 10px 15px;
+}
+.addTable{
+    position: absolute;
+    top: 460px;
+    left: 550px;
+    width: 391px;
+    height: 80px;
+    border: 3px solid #fcf8e3;
+}
+.addTable tbody tr td{
+    background: #fff;
+    font-size: 14px;
+    border: 1px none #ddd;
+}
+.form-control{
+    width: 300px;
+    height: 30px;
+    border: 1px solid #dddddd;
+}
+.btn{
+    background: #5cb85c;
+    color: white;
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    border: 1px solid #4cae4c;
+    border-radius: 4px;
+}
