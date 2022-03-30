@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/AdminCategoryEdit.css">
+</head>
+<body>
+<span class="black"></span>
+<header>
+    <img src="img/tmallbuy.png" alt="" class="tmallbuy">
+    <ul class="a2">
+        <li><a href="AdminCategoryList.html">天猫后台</a></li>
+        <li><a href="AdminCategoryList.html">分类管理</a></li>
+        <li><a href="AdminUserList.html">用户管理</a></li>
+        <li><a href="AdminOrderList.html">订单管理</a></li>
+    </ul>
+</header>
+<section>
+    <ol class="breadcrumb">
+        <li><a href="AdminCategoryList.html">所有分类</a></li>
+        <li>编辑分类</li>
+    </ol>
+    <div id="new_class">编辑分类</div>
+    <form method="post" id="addForm">
+        <table class="addTable">
+            <tbody><tr>
+                <td>分类名称</td>
+                <td><input id="form-control" name="name" type="text" class="form-control" value="平板电视"></td>
+            </tr>
+            <tr>
+                <td>分类图片</td>
+                <td>
+                    <input id="categoryPic" type="file" name="filepath">
+                </td>
+            </tr>
+            <tr class="submitTR">
+                <td colspan="2" align="center">
+                    <button type="submit" class="btn">提 交</button>
+                </td>
+            </tr>
+            </tbody></table>
+    </form>
+</section>
+<script>
+    'use strict';
+    //动态设置输入框内容
+    var things_name = "平板电视";
+    document.getElementById("form-control").setAttribute("value",things_name);
+</script>
+</body>
+</html>
