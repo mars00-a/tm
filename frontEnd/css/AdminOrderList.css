@@ -136,7 +136,8 @@ thead tr td{
 
 #page{
     display: block;
-    margin-left: 480px;
+    margin-left: 520px;
+    margin-top: 50px;
     /*position: relative;*/
     /*position: absolute;*/
     /*top: 270px;*/
