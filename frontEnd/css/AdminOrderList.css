@@ -92,6 +92,7 @@ thead tr td{
 
 .hidden{
     /*display: inline-block;*/
+    /*display: none;*/
     margin: 25px  100px;
     padding: 25px  100px;
 }
@@ -102,8 +103,7 @@ thead tr td{
     margin: 0;
 }
 .hidden td div{
-    line-height: 120px;
-    margin-left:100px;
+    margin: 40px 0 40px 100px;
 }
 .hidden td div a{
     display: inline-block;

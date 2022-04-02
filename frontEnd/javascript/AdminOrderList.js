@@ -17,6 +17,8 @@ if(page_number<5){
         var a=document.getElementById("page"+String(5-i)).style.visibility="hidden";
     }
 }
+
+
 //隐藏表格
 if(page_number === 1){
     var i2;
@@ -77,6 +79,9 @@ function change_color() {
     }
 }
 function update(x) {
+    for(i = 1; i<6; i++) {
+        $("#hide"+i).hide();
+    }
     now_page = parseInt(x);
     if(now_page === page_number){
         Hidden();
@@ -161,4 +166,23 @@ function last() {
     }
     change_color();
     return false;
+}
+
+//用于隐藏所有的详细信息
+$(document).ready(function() {
+    for(i = 1; i<6; i++) {
+        $("#hide"+i).hide();
+    }
+});
+
+let myStatus = [true,true,true,true,true];
+function myHide(i){
+    if(myStatus[i-1]){
+        myStatus[i-1] = false;
+        $("#hide"+i).show();
+    }
+    else {
+        myStatus[i-1] = true;
+        $("#hide"+i).hide();
+    }
 }
