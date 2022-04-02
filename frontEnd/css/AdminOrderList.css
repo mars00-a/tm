@@ -1,0 +1,156 @@
+body{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+/*页面的头部*/
+header{
+    position: relative;
+    margin: 0 auto;
+    width: 1500px;
+    height:65px;
+}
+.black{
+    position: absolute;
+    width: 100%;
+    height: 53px;
+    background: black;
+}
+.tmallbuy{
+    position: absolute;
+    width: 45px;
+    height: 45px;
+}
+.a2{
+    margin-top: 12px;
+    position: absolute;
+    left: 25px;
+}
+.a2 li{
+    font-size: 18px;
+    list-style: none;
+    float: left;
+    margin-right: 32px;
+}
+a{
+    text-decoration: none;
+    color: #9d9d9d;
+}
+/*页面主体内容*/
+section{
+    position: relative;
+    margin: 0 auto;
+    width: 1500px;
+    height:80px;
+}
+.label{
+    top: -50px;
+    position: absolute;
+    background-color: #5bc0de;
+    width: 60px;
+    line-height: 1.5em;
+    font-size: 75%;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    vertical-align: baseline;
+    left: 28px;
+    border-radius: 0.3em;
+}
+#users{
+    position: relative;
+    /*top: 50px;*/
+    /*left: 28px;*/
+    margin-left: 28px;
+    margin-top: 50px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    border: 1px solid #ddd;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+td{
+    padding-left: 5px;
+    background: #f7f7f7;
+    height: 28px;
+    border: 1px solid #ddd;
+}
+thead tr td{
+    background: #dff0d8;
+}
+
+.operation{
+    background: #337AB7;
+    color: white;
+    padding: 2px 4px;
+    border-radius: 3px;
+}
+.operation:hover{
+    background: #286090;
+}
+
+
+.hidden{
+    /*display: inline-block;*/
+    margin: 25px  100px;
+    padding: 25px  100px;
+}
+.hidden td{
+    background: white;
+    border:0;
+    padding: 0;
+    margin: 0;
+}
+.hidden td div{
+    line-height: 120px;
+    margin-left:100px;
+}
+.hidden td div a{
+    display: inline-block;
+    margin-left: 20px;
+    color: #337AB7;
+}
+.hidden td div a:hover{
+    color: #23527C;
+    text-decoration: underline;
+}
+.hidden td div span{
+    color: gray;
+}
+.hidden td div .span1{
+    display: inline-block;
+    margin-left: 130px;
+}
+.hidden td div .span2 {
+    display: inline-block;
+    margin-left: 40px;
+}
+.hidden img{
+    vertical-align: middle;
+    width: 40px;
+    height: 40px;
+    margin-left: 110px;
+}
+
+
+
+#page{
+    display: block;
+    margin-left: 480px;
+    /*position: relative;*/
+    /*position: absolute;*/
+    /*top: 270px;*/
+    /*left: 520px;*/
+}
+#page li{
+    float: left;
+    list-style: none;
+    font-size: 14px;
+    padding: 6px 12px;
+    border: 1px solid #ddd;
+}
+#page li a{
+    color: #0052ee;
+}
+
+
