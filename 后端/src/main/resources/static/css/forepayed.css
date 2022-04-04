@@ -1,0 +1,148 @@
+*{
+    margin:0px;
+    padding: 0px;
+}
+li{
+    list-style: none;
+}
+input:focus{
+    outline: none;
+}
+.clear{
+    clear: both;
+}
+body{
+    margin: 0px auto;
+}
+
+
+
+
+.search{
+    width: 1000px;
+    position: relative;
+    margin: 0px auto;
+}
+.search .searchbox{
+    position: relative;
+    float: right;
+    left: 0px;
+    width: 295px;
+    height: 70px;
+    margin-top: 15px;
+}
+.search a img{
+    display: block;
+    width: 150px;
+    position: absolute;
+    top: 50px;
+    left: 0px;
+}
+.search .searchbox input{
+    display: block;
+    border: 3px solid rgb(196, 0, 0);
+    float: left;
+    height: 40px;
+    width: 230px;
+    padding-left: 4px;
+}
+.search .searchbox button{
+    background-color: white;
+    display: block;
+    border: 0px;
+    float: left;
+    color: white;
+    background-color: rgb(196, 0, 0);
+    height: 40px;
+    width: 65px;
+}
+.search .searchbox button:hover{
+    cursor: pointer;
+}
+.search .searchbox .inputFour li{
+    color: gray;
+    font-size: 14px;
+    display: block;
+    float: right;
+    margin-right: 39px;
+    margin-top: 3px;
+}
+.search .searchbox .inputFour li:hover{
+    color: rgb(196, 0, 0);
+    cursor:pointer;
+}
+.search .searchbox .inputFour a:hover{
+    color: rgb(196, 0, 0);
+}
+
+
+
+.main{
+    border:1px solid #D4D4D4;
+    width:1000px;
+    margin:0 auto;
+    margin-top:20px;
+}
+.main .paySuccess{
+    background-color: #ECFFDC;
+    height:61px;
+    line-height:61px;
+    padding-left:20px;
+}
+.main .paySuccess img{
+    vertical-align: middle;
+}
+.main .paySuccess span{
+    font-size:14px;
+    font-weight:bold;
+    margin-left:10px;
+}
+.main .ifo{
+    padding:26px 37px;
+    border-bottom:1px solid #D4D4D4;
+    margin-bottom:10px;
+    margin-left:20px;
+}
+.main .ifo ul{
+    display: inline-block;
+    margin-left:35px;
+}
+.main .ifo ul li{
+    list-style:disc;
+    font-size:12px;
+    font-family: Arial;
+    padding:3px 0px;
+}
+.main .ifo #money {
+    color: #B10000;
+    font-weight: bold;
+    font-size: 14px;
+    font-family: arial;
+}
+.main .addDress{
+    font-size: 12px;
+    font-family: Arial;
+    margin-left:15px;
+    line-height:30px;
+}
+.main .addDress a{
+    color: #2D8CBA;
+    text-decoration: none;
+}
+.main .addDress a:hover{
+    color: #2D8CBA;
+    text-decoration: underline;
+}
+.main .warn{
+    margin-left:40px;
+    margin-top:20px;
+    margin-bottom:20px;
+    font-size: 12px;
+}
+.main img{
+    vertical-align: middle;
+}
+.main .warn span{
+    color: #C40000;
+    font-weight: bold;
+}

@@ -1,0 +1,157 @@
+*{
+    margin:0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+input:focus{
+    outline: none;
+}
+.clear{
+    clear: both;
+}
+body{
+    margin: 0 auto;
+}
+a{
+    color:white;
+    text-decoration:none;
+}
+.icomoon{
+    font-family: icomoon, serif;
+}
+
+
+
+
+
+.search{
+    width: 1000px;
+    position: relative;
+    margin: 0 auto;
+}.search a img{
+     position: absolute;
+     left: -55px;
+     top:-40px;
+     display: block;
+ }
+.search .searchbox{
+    position: relative;
+    left: 298px;
+    top: 10px;
+    width: 295px;
+    height: 70px;
+    margin-top: 52px;
+}
+
+.search .searchbox input{
+    display: block;
+    border: 3px solid rgb(196, 0, 0);
+    height: 44px;
+    width: 275px;
+    padding-left: 4px;
+}
+.search .searchbox button{
+    position: relative;
+    top: -44px;
+    left: 273px;
+    display: block;
+    border: 0;
+    color: white;
+    background-color: rgb(196, 0, 0);
+    height: 44px;
+    width: 104px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.search .searchbox button:hover{
+    cursor: pointer;
+}
+.search .searchbox .inputFour{
+    position: relative;
+    top: -40px;
+    width: 400px;
+    right:0;
+}
+.search .searchbox .inputFour a{
+    display: inline-block;
+    float: left;
+}
+.search .searchbox .inputFour li{
+    color: gray;
+    font-size: 14px;
+    display: inline-block;
+    margin-right: 39px;
+    margin-top: 3px;
+}
+.search .searchbox .inputFour li:hover{
+    color: rgb(196, 0, 0);
+    cursor:pointer;
+}
+.search .searchbox .inputFour a:hover{
+    color: rgb(196, 0, 0);
+}
+
+
+
+
+
+.commodity{
+    position: relative;
+    margin:10px auto;
+    width:1050px;
+    background-color: #F5F5F5;
+}
+.commodity .commoditylist{
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    background-color: #F5F5F5;
+}
+.commodity .commoditylist .mouldA{
+    position: relative;
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 10px;
+    background-color: white;
+    border: 1px solid white;
+}
+.commodity .commoditylist .mouldA:hover{
+    border: 1px solid #C60A0A;
+}
+.commodity .commoditylist .mouldA img{
+    width:190px;
+}
+
+.commodity .commoditylist .mouldA .span1{
+    width: 160px;
+    display:block;
+    border:0;
+    font-size: 12px;
+    color: #666666;
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.commodity .commoditylist .mouldA .red{
+    color: #FF003A;
+    margin-left: 15px;
+    line-height: 40px;
+}
+
+
+.end{
+    position: relative;
+    margin:10px auto;
+    width:1050px;
+    background-color: #F5F5F5;
+    line-height:800px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.end img{
+    display: block;
+    position: relative;
+    left: 490px;
+}

@@ -1,0 +1,1417 @@
+<html lang="chinese" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <title>天猫官网</title>
+    <script src = javascript/jquery.min.js> </script>
+    <script src = javascript/axios.min.js> </script>
+    <script type="text/javascript" src="javascript/home.js"> </script>
+    <link rel="stylesheet" href="css/home.css ">
+    <style>
+        @font-face {
+            font-family: 'icomoon';
+            src: url('fonts/icomoon.eot?qv4n05');
+            src: url('fonts/icomoon.eot?qv4n05#iefix') format('embedded-opentype'),
+                url('fonts/icomoon.ttf?qv4n05') format('truetype'),
+                url('fonts/icomoon.woff?qv4n05') format('woff'),
+                url('fonts/icomoon.svg?qv4n05#icomoon') format('svg');
+            font-weight: normal;
+            font-style: normal;
+            font-display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 最上方导航栏 -------------------------------------------->
+<!--    <div id="nav">-->
+<!--    </div>-->
+    <div th:replace="nav.html::nav"></div>
+
+    <!-- 搜索框那一行 ------------------------------------------->
+    <div class="search">
+        <a href="#"><img src="img/logo.gif"></a>
+        <div class="searchBox">
+            <input type="text" placeholder="搜索内容">
+            <a href="#"><button id="button" type="submit">搜索</button></a>
+            <div class="inputFour">
+                <ul>
+                    <a href="#">
+                        <li>平衡车</li>
+                    </a>
+                    <a href="#">
+                        <li>|  扫地机器人</li>
+                    </a>
+                    <a href="#">
+                        <li>|  原汁机</li>
+                    </a>
+                    <a href="#">
+                        <li>|  冰箱</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <!--    滚动图--------------------------------------------->
+    <div class="rollPicture">
+<!--        小导航栏-------------------------------->
+        <div class="smallNav">
+            <div class="div1">
+                <span class="span1">  商品分类</span>
+                <a href="#" id="a1">
+                    <span id="span2" class="span2">  天猫超市</span>
+                </a>
+                <a href="#">
+                    <span id="span3" class="span2">  天猫国际</span>
+                </a>
+                <a href="#">
+                    <span id="span4">平板电视</span>
+                </a>
+                <a href="#">
+                    <span id="span5">马桶</span>
+                </a>
+                <a href="#">
+                    <span id="span6">沙发</span>
+                </a>
+                <a href="">
+                    <span id="span7">电热水器</span>
+                </a>
+                <img class="mydisplay" id="img1" src="img/catear.png"/>
+                <img class="mydisplay" id="img2" src="img/catear.png"/>
+                <img class="mydisplay" id="img3" src="img/catear.png"/>
+                <img class="mydisplay" id="img4" src="img/catear.png"/>
+                <img class="mydisplay" id="img5" src="img/catear.png"/>
+                <img class="mydisplay" id="img6" src="img/catear.png"/>
+            </div>
+
+        </div>
+<!--        分类列表和滚动图------------------------->
+        <div class="ifo">
+<!--        竖列商品分类列表-------------->
+        <div class="list">
+                <ul>
+                    <li><a id="mytest" class="icomoon nav1" href="#">  平板电视</a></li>
+                    <li><a class="icomoon nav2" href="#">  马桶</a></li>
+                    <li><a class="icomoon nav3" href="#">  沙发</a></li>
+                    <li><a class="icomoon nav4" href="#">  电热水器</a></li>
+                    <li><a class="icomoon nav5" href="#">  平衡车</a></li>
+                    <li><a class="icomoon nav6" href="#">  扫地机器人</a></li>
+                    <li><a class="icomoon nav7" href="#">  原汁机</a></li>
+                    <li><a class="icomoon nav8" href="#">  冰箱</a></li>
+                    <li><a class="icomoon nav9" href="#">  空调</a></li>
+                    <li><a class="icomoon nav10" href="#">  女表</a></li>
+                    <li><a class="icomoon nav11" href="#">  男表</a></li>
+                    <li><a class="icomoon nav12" href="#">  男士手拿包</a></li>
+                    <li><a class="icomoon nav13" href="#">  男士西服</a></li>
+                    <li><a class="icomoon nav14" href="#">  时尚男鞋</a></li>
+                    <li><a class="icomoon nav15" href="#">  品牌女装</a></li>
+                    <li><a class="icomoon nav16" href="#">  太阳镜</a></li>
+                    <li><a class="icomoon nav17" href="#">  安全座椅</a></li>
+                </ul>
+            </div>
+<!--        分类表详情-->
+        <div id="list1" class="mylist">
+            <ul>
+                <li><a href="#">屏大影院</a></li>
+                <li><a href="#">周末</a></li>
+                <li><a href="#">新品特惠</a></li>
+                <li><a href="#">32时电视机</a></li>
+                <li><a href="#">智能网络</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">USB搞轻解</a></li>
+                <li><a href="#">芒果TV在线</a></li>
+                <li><a class="blue" href="#">抢购价</a></li>
+                <li><a href="#">USB解码</a></li>
+                <li><a href="#">32英时</a></li>
+                <li><a href="#">10核</a></li>
+                <li><a href="#">TCL品牌日</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">不要赠品</a></li>
+                <li><a href="#">新品上市</a></li>
+                <li><a href="#">4k硬屏</a></li>
+                <li><a href="#">领100元券</a></li>
+                <li><a href="#">智能高清</a></li>
+                <li><a href="#">8月，酷暑</a></li>
+                <li><a href="#">8月大促</a></li>
+                <li><a href="#">天猫定制</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">智能操作系统</a></li>
+                <li><a href="#">金色外观</a></li>
+                <li><a href="#">三星屏幕</a></li>
+                <li><a class="blue" href="#">客厅爆款</a></li>
+                <li><a href="#">八核配置</a></li>
+                <li><a href="#">限时特惠</a></li>
+            </ul>
+            <ul>
+                <li><a class="blue" href="#">限时特惠</a></li>
+                <li><a href="#">热销爆款</a></li>
+                <li><a href="#">4K全高清</a></li>
+                <li><a href="#">六核智能</a></li>
+                <li><a href="#">14核4K</a></li>
+                <li><a class="blue" href="#">YUNOS</a></li>
+                <li><a href="#">YUNOS</a></li>
+                <li><a href="#">64位处理器</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">YUNOS</a></li>
+                <li><a href="#">微信电视</a></li>
+                <li><a href="#">4K超清</a></li>
+                <li><a href="#">64位真4K</a></li>
+                <li><a href="#">10核机芯</a></li>
+                <li><a href="#">V字黑轴底座</a></li>
+                <li><a href="#">4K超清</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">64位14核</a></li>
+                <li><a href="#">海量影视</a></li>
+                <li><a href="#">人气爆款</a></li>
+                <li><a href="#">限时特惠</a></li>
+                <li><a href="#">真4K屏</a></li>
+                <li><a href="#">65时巨屏</a></li>
+                <li><a href="#">4K超清视界</a></li>
+                <li><a href="#">限时特惠</a></li>
+            </ul>
+            <ul>
+                <li><a class="blue" href="#">55寸旗舰</a></li>
+                <li><a href="#">4K机皇</a></li>
+                <li><a href="#">曲面机皇</a></li>
+                <li><a href="#">轻薄4K</a></li>
+            </ul>
+        </div>
+
+        <div id="list2" class="mylist">
+                <ul>
+                    <li><a href="#">高性价比</a></li>
+                    <li><a href="#">纳米自洁釉</a></li>
+                    <li><a href="#">盖板易拆</a></li>
+                    <li><a class="blue" href="#">领券更优惠</a></li>
+                    <li><a href="#">全国联保</a></li>
+                    <li><a href="#">咨询大惊喜</a></li>
+                    <li><a href="#">咨询大惊喜</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">全自动感应</a></li>
+                    <li><a href="#">即热式功能</a></li>
+                    <li><a href="#">智能护理</a></li>
+                    <li><a href="#">官方正品</a></li>
+                    <li><a class="blue" href="#">高效节水</a></li>
+                    <li><a href="#">立减300</a></li>
+                    <li><a href="#">官方正品</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">3秒速冲</a></li>
+                    <li><a href="#">送角阀软管</a></li>
+                    <li><a href="#">送角阀软管</a></li>
+                    <li><a class="blue" href="#">12大中心仓</a></li>
+                    <li><a href="#">蹲坐两用</a></li>
+                    <li><a class="blue" href="#">领券减50</a></li>
+                    <li><a href="#">全国联保</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">德国品牌</a></li>
+                    <li><a href="#">收藏加购</a></li>
+                    <li><a href="#">加长型缸体</a></li>
+                    <li><a href="#">喷射虹吸</a></li>
+                    <li><a href="#">家装狂欢节</a></li>
+                    <li><a href="#">AB1287</a></li>
+                    <li><a href="#">领券再减</a></li>
+                    <li><a href="#">千程入户</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">前景冲力</a></li>
+                    <li><a href="#">包安装</a></li>
+                    <li><a href="#">土豪直接付款</a></li>
+                    <li><a class="blue" href="#">咨询在线客服</a></li>
+                    <li><a href="#">赠送原厂配件</a></li>
+                    <li><a href="#">新聚汇</a></li>
+                    <li><a href="#">吸力哥</a></li>
+                    <li><a href="#">九牧正品</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">覆盖区域内</a></li>
+                    <li><a href="#">指定1800</a></li>
+                    <li><a href="#">晒图返10元</a></li>
+                    <li><a href="#">1300城免</a></li>
+                    <li><a href="#">久坐舒适</a></li>
+                    <li><a href="#">晒图送20元</a></li>
+                    <li><a href="#">摩普智能马桶</a></li>
+                    <li><a href="#">双杆喷头</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">送空调扇</a></li>
+                    <li><a href="#">咨询大惊喜</a></li>
+                    <li><a href="#">节水小管家</a></li>
+                    <li><a href="#">高端大气</a></li>
+                    <li><a class="blue" href="#">科勒授权</a></li>
+                    <li><a href="#">超旋风系列</a></li>
+                    <li><a href="#">限时升级</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">立减500</a></li>
+                    <li><a href="#">赠送角阀软管</a></li>
+                    <li><a class="blue" href="#">法恩莎正品</a></li>
+                    <li><a class="blue" href="#">12大中西仓</a></li>
+                </ul>
+            </div>
+
+        <div id="list3" class="mylist">
+            <ul>
+                <li><a class="blue" href="#">热卖推荐</a></li>
+                <li><a href="#">高档户型客厅</a></li>
+                <li><a href="#">16CM坐垫</a></li>
+                <li><a href="#">匠心独运</a></li>
+                <li><a href="#">大小户型沙发</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">8.23预售</a></li>
+                <li><a href="#">热销爆款</a></li>
+                <li><a href="#">高档进口牛皮</a></li>
+                <li><a class="blue" href="#">三位可躺</a></li>
+                <li><a href="#">北美进口橡木</a></li>
+                <li><a href="#">全香樟实木</a></li>
+                <li><a href="#">厂家直销</a></li>
+            </ul>
+            </ul>
+            <ul>
+                <li><a href="#">可拆洗</a></li>
+                <li><a href="#">4级抗污</a></li>
+                <li><a href="#">多功能</a></li>
+                <li><a href="#">全实木雕刻</a></li>
+                <li><a href="#">3D玛雅绒</a></li>
+                <li><a href="#">北美橡木</a></li>
+                <li><a href="#">防水防污</a></li>
+                <li><a href="#">都市转角户型</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">多功能扶手</a></li>
+                <li><a href="#">彼爱专利产品</a></li>
+                <li><a href="#">国际设计师</a></li>
+                <li><a href="#">进口头层牛皮</a></li>
+                <li><a class="blue" href="#">经典爆款</a></li>
+                <li><a href="#">可拆洗设计</a></li>
+                <li><a href="#">优质棉麻面料</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">高档超柔绒布内</a></li>
+                <li><a class="blue" href="#">进口橡木框架</a></li>
+                <li><a href="#">欧洲白蜡木</a></li>
+                <li><a href="#">北美黑胡桃</a></li>
+                <li><a href="#">质保3年</a></li>
+            </ul>
+            <ul>
+                <li><a class="blue" href="#">8.29零点</a></li>
+                <li><a href="#">头层牛皮</a></li>
+                <li><a href="#">实木雕花</a></li>
+                <li><a href="#">全拆洗</a></li>
+                <li><a href="#">大师设计</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">20-22号</a></li>
+                <li><a href="#">北美黑胡桃</a></li>
+                <li><a class="blue" href="#">泰国进口实木</a></li>
+                <li><a class="blue" href="#">8.22聚价</a></li>
+                <li><a class="blue" href="#">品质保障</a></li>
+                <li><a href="#">优质绒布</a></li>
+            </ul>
+        </div>
+
+        <div id="list4" class="mylist">
+            <ul>
+                <li><a class="blue" href="#">机控遥控</a></li>
+                <li><a href="#">搪瓷超强内胆</a></li>
+                <li><a href="#">阿里智能</a></li>
+                <li><a href="#">3D速热</a></li>
+                <li><a href="#">热水器狂欢</a></li>
+                <li><a href="#">3D动态加热</a></li>
+                <li><a href="#">金圭经典</a></li>
+                <li><a class="blue" href="#">一级能效</a></li>
+            </ul>
+            <ul>
+                <li><a class="blue" href="#">三档功率可调</a></li>
+                <li><a href="#">送双立人刀</a></li>
+                <li><a href="#">全胆半胆加热</a></li>
+                <li><a href="#">爆款低价购</a></li>
+                <li><a href="#">4倍迅速增容</a></li>
+                <li><a href="#">阿里智能</a></li>
+                <li><a href="#">5昼夜保温</a></li>
+            </ul>
+            </ul>
+            <ul>
+                <li><a href="#">官方正品</a></li>
+                <li><a class="blue" href="#">5昼夜保温</a></li>
+                <li><a href="#">3KW速热</a></li>
+                <li><a href="#">立减200</a></li>
+                <li><a href="#">全国服务热线</a></li>
+                <li><a class="blue" href="#">8月26日</a></li>
+                <li><a href="#">全国服务热线</a></li>
+                <li><a href="#">wifi智能</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">新品抢先购</a></li>
+                <li><a class="blue" href="#">新品上市</a></li>
+                <li><a class="blue" href="#">26号10点</a></li>
+                <li><a href="#">最后一天</a></li>
+                <li><a href="#">美的自营</a></li>
+                <li><a href="#">限时48小时</a></li>
+                <li><a href="#">准时预约</a></li>
+                <li><a class="blue" href="#">官方正品</a></li>
+            </ul>
+            <ul>
+                <li><a class="blue" href="#">唱快淋漓</a></li>
+                <li><a href="#">嗨爆8月</a></li>
+                <li><a href="#">内胆自清洁</a></li>
+                <li><a href="#">8月26号</a></li>
+                <li><a class="blue" href="#">疯抢48小时</a></li>
+                <li><a href="#">爆款预售</a></li>
+                <li><a href="#">26号10点</a></li>
+                <li><a href="#">双2100瓦</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">全国服务热线</a></li>
+                <li><a href="#">嗨爆8月</a></li>
+                <li><a href="#">高温抑菌</a></li>
+                <li><a href="#">三档功率可调</a></li>
+                <li><a href="#">全网爆款</a></li>
+                <li><a class="blue" href="#">以旧换新</a></li>
+                <li><a href="#">8月暑促</a></li>
+            </ul>
+            <ul>
+                <li><a class="blue" href="#">整机8年保修</a></li>
+                <li><a class="blue" href="#">准时预约</a></li>
+                <li><a href="#">WiFi智控</a></li>
+                <li><a class="blue" href="#">狂欢疯抢</a></li>
+                <li><a href="#">疯抢48小时</a></li>
+                <li><a class="blue" href="#">8年包修</a></li>
+                <li><a class="blue" href="#">每日前100</a></li>
+                <li><a href="#">8月26号</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">每日前50</a></li>
+                <li><a href="#">每日前100</a></li>
+                <li><a href="#">限量抢熨烫机</a></li>
+                <li><a href="#">品牌活动价</a></li>
+            </ul>
+        </div>
+
+        <div id="list5" class="mylist">
+            <ul>
+                <li><a href="#">屏大影院</a></li>
+                <li><a href="#">周末</a></li>
+                <li><a href="#">新品特惠</a></li>
+                <li><a href="#">32时电视机</a></li>
+                <li><a href="#">智能网络</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">USB搞轻解</a></li>
+                <li><a href="#">芒果TV在线</a></li>
+                <li><a class="blue" href="#">抢购价</a></li>
+                <li><a href="#">USB解码</a></li>
+                <li><a href="#">32英时</a></li>
+                <li><a href="#">10核</a></li>
+                <li><a href="#">TCL品牌日</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">不要赠品</a></li>
+                <li><a href="#">新品上市</a></li>
+                <li><a href="#">4k硬屏</a></li>
+                <li><a href="#">领100元券</a></li>
+                <li><a href="#">智能高清</a></li>
+                <li><a href="#">8月，酷暑</a></li>
+                <li><a href="#">8月大促</a></li>
+                <li><a href="#">天猫定制</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">智能操作系统</a></li>
+                <li><a href="#">金色外观</a></li>
+                <li><a href="#">三星屏幕</a></li>
+                <li><a class="blue" href="#">客厅爆款</a></li>
+                <li><a href="#">八核配置</a></li>
+                <li><a href="#">限时特惠</a></li>
+            </ul>
+            <ul>
+                <li><a class="blue" href="#">限时特惠</a></li>
+                <li><a href="#">热销爆款</a></li>
+                <li><a href="#">4K全高清</a></li>
+                <li><a href="#">六核智能</a></li>
+                <li><a href="#">14核4K</a></li>
+                <li><a class="blue" href="#">YUNOS</a></li>
+                <li><a href="#">YUNOS</a></li>
+                <li><a href="#">64位处理器</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">YUNOS</a></li>
+                <li><a href="#">微信电视</a></li>
+                <li><a href="#">4K超清</a></li>
+                <li><a href="#">64位真4K</a></li>
+                <li><a href="#">10核机芯</a></li>
+                <li><a href="#">V字黑轴底座</a></li>
+                <li><a href="#">4K超清</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">64位14核</a></li>
+                <li><a href="#">海量影视</a></li>
+                <li><a href="#">人气爆款</a></li>
+                <li><a href="#">限时特惠</a></li>
+                <li><a href="#">真4K屏</a></li>
+                <li><a href="#">65时巨屏</a></li>
+                <li><a href="#">4K超清视界</a></li>
+                <li><a href="#">限时特惠</a></li>
+            </ul>
+            <ul>
+                <li><a class="blue" href="#">55寸旗舰</a></li>
+                <li><a href="#">4K机皇</a></li>
+                <li><a href="#">曲面机皇</a></li>
+                <li><a href="#">轻薄4K</a></li>
+            </ul>
+        </div>
+
+        <div id="list6" class="mylist">
+            <ul>
+                <li><a href="#">高性价比</a></li>
+                <li><a href="#">纳米自洁釉</a></li>
+                <li><a href="#">盖板易拆</a></li>
+                <li><a class="blue" href="#">领券更优惠</a></li>
+                <li><a href="#">全国联保</a></li>
+                <li><a href="#">咨询大惊喜</a></li>
+                <li><a href="#">咨询大惊喜</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">全自动感应</a></li>
+                <li><a href="#">即热式功能</a></li>
+                <li><a href="#">智能护理</a></li>
+                <li><a href="#">官方正品</a></li>
+                <li><a class="blue" href="#">高效节水</a></li>
+                <li><a href="#">立减300</a></li>
+                <li><a href="#">官方正品</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">3秒速冲</a></li>
+                <li><a href="#">送角阀软管</a></li>
+                <li><a href="#">送角阀软管</a></li>
+                <li><a class="blue" href="#">12大中心仓</a></li>
+                <li><a href="#">蹲坐两用</a></li>
+                <li><a class="blue" href="#">领券减50</a></li>
+                <li><a href="#">全国联保</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">德国品牌</a></li>
+                <li><a href="#">收藏加购</a></li>
+                <li><a href="#">加长型缸体</a></li>
+                <li><a href="#">喷射虹吸</a></li>
+                <li><a href="#">家装狂欢节</a></li>
+                <li><a href="#">AB1287</a></li>
+                <li><a href="#">领券再减</a></li>
+                <li><a href="#">千程入户</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">前景冲力</a></li>
+                <li><a href="#">包安装</a></li>
+                <li><a href="#">土豪直接付款</a></li>
+                <li><a class="blue" href="#">咨询在线客服</a></li>
+                <li><a href="#">赠送原厂配件</a></li>
+                <li><a href="#">新聚汇</a></li>
+                <li><a href="#">吸力哥</a></li>
+                <li><a href="#">九牧正品</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">覆盖区域内</a></li>
+                <li><a href="#">指定1800</a></li>
+                <li><a href="#">晒图返10元</a></li>
+                <li><a href="#">1300城免</a></li>
+                <li><a href="#">久坐舒适</a></li>
+                <li><a href="#">晒图送20元</a></li>
+                <li><a href="#">摩普智能马桶</a></li>
+                <li><a href="#">双杆喷头</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">送空调扇</a></li>
+                <li><a href="#">咨询大惊喜</a></li>
+                <li><a href="#">节水小管家</a></li>
+                <li><a href="#">高端大气</a></li>
+                <li><a class="blue" href="#">科勒授权</a></li>
+                <li><a href="#">超旋风系列</a></li>
+                <li><a href="#">限时升级</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">立减500</a></li>
+                <li><a href="#">赠送角阀软管</a></li>
+                <li><a class="blue" href="#">法恩莎正品</a></li>
+                <li><a class="blue" href="#">12大中西仓</a></li>
+            </ul>
+        </div>
+
+        <div id="list7" class="mylist">
+            <ul>
+                <li><a class="blue" href="#">热卖推荐</a></li>
+                <li><a href="#">高档户型客厅</a></li>
+                <li><a href="#">16CM坐垫</a></li>
+                <li><a href="#">匠心独运</a></li>
+                <li><a href="#">大小户型沙发</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">8.23预售</a></li>
+                <li><a href="#">热销爆款</a></li>
+                <li><a href="#">高档进口牛皮</a></li>
+                <li><a class="blue" href="#">三位可躺</a></li>
+                <li><a href="#">北美进口橡木</a></li>
+                <li><a href="#">全香樟实木</a></li>
+                <li><a href="#">厂家直销</a></li>
+            </ul>
+            </ul>
+            <ul>
+                <li><a href="#">可拆洗</a></li>
+                <li><a href="#">4级抗污</a></li>
+                <li><a href="#">多功能</a></li>
+                <li><a href="#">全实木雕刻</a></li>
+                <li><a href="#">3D玛雅绒</a></li>
+                <li><a href="#">北美橡木</a></li>
+                <li><a href="#">防水防污</a></li>
+                <li><a href="#">都市转角户型</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">多功能扶手</a></li>
+                <li><a href="#">彼爱专利产品</a></li>
+                <li><a href="#">国际设计师</a></li>
+                <li><a href="#">进口头层牛皮</a></li>
+                <li><a class="blue" href="#">经典爆款</a></li>
+                <li><a href="#">可拆洗设计</a></li>
+                <li><a href="#">优质棉麻面料</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">高档超柔绒布内</a></li>
+                <li><a class="blue" href="#">进口橡木框架</a></li>
+                <li><a href="#">欧洲白蜡木</a></li>
+                <li><a href="#">北美黑胡桃</a></li>
+                <li><a href="#">质保3年</a></li>
+            </ul>
+            <ul>
+                <li><a class="blue" href="#">8.29零点</a></li>
+                <li><a href="#">头层牛皮</a></li>
+                <li><a href="#">实木雕花</a></li>
+                <li><a href="#">全拆洗</a></li>
+                <li><a href="#">大师设计</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">20-22号</a></li>
+                <li><a href="#">北美黑胡桃</a></li>
+                <li><a class="blue" href="#">泰国进口实木</a></li>
+                <li><a class="blue" href="#">8.22聚价</a></li>
+                <li><a class="blue" href="#">品质保障</a></li>
+                <li><a href="#">优质绒布</a></li>
+            </ul>
+        </div>
+
+        <div id="list8" class="mylist">
+            <ul>
+                <li><a class="blue" href="#">机控遥控</a></li>
+                <li><a href="#">搪瓷超强内胆</a></li>
+                <li><a href="#">阿里智能</a></li>
+                <li><a href="#">3D速热</a></li>
+                <li><a href="#">热水器狂欢</a></li>
+                <li><a href="#">3D动态加热</a></li>
+                <li><a href="#">金圭经典</a></li>
+                <li><a class="blue" href="#">一级能效</a></li>
+            </ul>
+            <ul>
+                <li><a class="blue" href="#">三档功率可调</a></li>
+                <li><a href="#">送双立人刀</a></li>
+                <li><a href="#">全胆半胆加热</a></li>
+                <li><a href="#">爆款低价购</a></li>
+                <li><a href="#">4倍迅速增容</a></li>
+                <li><a href="#">阿里智能</a></li>
+                <li><a href="#">5昼夜保温</a></li>
+            </ul>
+            </ul>
+            <ul>
+                <li><a href="#">官方正品</a></li>
+                <li><a class="blue" href="#">5昼夜保温</a></li>
+                <li><a href="#">3KW速热</a></li>
+                <li><a href="#">立减200</a></li>
+                <li><a href="#">全国服务热线</a></li>
+                <li><a class="blue" href="#">8月26日</a></li>
+                <li><a href="#">全国服务热线</a></li>
+                <li><a href="#">wifi智能</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">新品抢先购</a></li>
+                <li><a class="blue" href="#">新品上市</a></li>
+                <li><a class="blue" href="#">26号10点</a></li>
+                <li><a href="#">最后一天</a></li>
+                <li><a href="#">美的自营</a></li>
+                <li><a href="#">限时48小时</a></li>
+                <li><a href="#">准时预约</a></li>
+                <li><a class="blue" href="#">官方正品</a></li>
+            </ul>
+            <ul>
+                <li><a class="blue" href="#">唱快淋漓</a></li>
+                <li><a href="#">嗨爆8月</a></li>
+                <li><a href="#">内胆自清洁</a></li>
+                <li><a href="#">8月26号</a></li>
+                <li><a class="blue" href="#">疯抢48小时</a></li>
+                <li><a href="#">爆款预售</a></li>
+                <li><a href="#">26号10点</a></li>
+                <li><a href="#">双2100瓦</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">全国服务热线</a></li>
+                <li><a href="#">嗨爆8月</a></li>
+                <li><a href="#">高温抑菌</a></li>
+                <li><a href="#">三档功率可调</a></li>
+                <li><a href="#">全网爆款</a></li>
+                <li><a class="blue" href="#">以旧换新</a></li>
+                <li><a href="#">8月暑促</a></li>
+            </ul>
+            <ul>
+                <li><a class="blue" href="#">整机8年保修</a></li>
+                <li><a class="blue" href="#">准时预约</a></li>
+                <li><a href="#">WiFi智控</a></li>
+                <li><a class="blue" href="#">狂欢疯抢</a></li>
+                <li><a href="#">疯抢48小时</a></li>
+                <li><a class="blue" href="#">8年包修</a></li>
+                <li><a class="blue" href="#">每日前100</a></li>
+                <li><a href="#">8月26号</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">每日前50</a></li>
+                <li><a href="#">每日前100</a></li>
+                <li><a href="#">限量抢熨烫机</a></li>
+                <li><a href="#">品牌活动价</a></li>
+            </ul>
+        </div>
+
+        <div id="list9" class="mylist">
+            <ul>
+                <li><a href="#">屏大影院</a></li>
+                <li><a href="#">周末</a></li>
+                <li><a href="#">新品特惠</a></li>
+                <li><a href="#">32时电视机</a></li>
+                <li><a href="#">智能网络</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">USB搞轻解</a></li>
+                <li><a href="#">芒果TV在线</a></li>
+                <li><a class="blue" href="#">抢购价</a></li>
+                <li><a href="#">USB解码</a></li>
+                <li><a href="#">32英时</a></li>
+                <li><a href="#">10核</a></li>
+                <li><a href="#">TCL品牌日</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">不要赠品</a></li>
+                <li><a href="#">新品上市</a></li>
+                <li><a href="#">4k硬屏</a></li>
+                <li><a href="#">领100元券</a></li>
+                <li><a href="#">智能高清</a></li>
+                <li><a href="#">8月，酷暑</a></li>
+                <li><a href="#">8月大促</a></li>
+                <li><a href="#">天猫定制</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">智能操作系统</a></li>
+                <li><a href="#">金色外观</a></li>
+                <li><a href="#">三星屏幕</a></li>
+                <li><a class="blue" href="#">客厅爆款</a></li>
+                <li><a href="#">八核配置</a></li>
+                <li><a href="#">限时特惠</a></li>
+            </ul>
+            <ul>
+                <li><a class="blue" href="#">限时特惠</a></li>
+                <li><a href="#">热销爆款</a></li>
+                <li><a href="#">4K全高清</a></li>
+                <li><a href="#">六核智能</a></li>
+                <li><a href="#">14核4K</a></li>
+                <li><a class="blue" href="#">YUNOS</a></li>
+                <li><a href="#">YUNOS</a></li>
+                <li><a href="#">64位处理器</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">YUNOS</a></li>
+                <li><a href="#">微信电视</a></li>
+                <li><a href="#">4K超清</a></li>
+                <li><a href="#">64位真4K</a></li>
+                <li><a href="#">10核机芯</a></li>
+                <li><a href="#">V字黑轴底座</a></li>
+                <li><a href="#">4K超清</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">64位14核</a></li>
+                <li><a href="#">海量影视</a></li>
+                <li><a href="#">人气爆款</a></li>
+                <li><a href="#">限时特惠</a></li>
+                <li><a href="#">真4K屏</a></li>
+                <li><a href="#">65时巨屏</a></li>
+                <li><a href="#">4K超清视界</a></li>
+                <li><a href="#">限时特惠</a></li>
+            </ul>
+            <ul>
+                <li><a class="blue" href="#">55寸旗舰</a></li>
+                <li><a href="#">4K机皇</a></li>
+                <li><a href="#">曲面机皇</a></li>
+                <li><a href="#">轻薄4K</a></li>
+            </ul>
+        </div>
+
+        <div id="list10" class="mylist">
+            <ul>
+                <li><a href="#">高性价比</a></li>
+                <li><a href="#">纳米自洁釉</a></li>
+                <li><a href="#">盖板易拆</a></li>
+                <li><a class="blue" href="#">领券更优惠</a></li>
+                <li><a href="#">全国联保</a></li>
+                <li><a href="#">咨询大惊喜</a></li>
+                <li><a href="#">咨询大惊喜</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">全自动感应</a></li>
+                <li><a href="#">即热式功能</a></li>
+                <li><a href="#">智能护理</a></li>
+                <li><a href="#">官方正品</a></li>
+                <li><a class="blue" href="#">高效节水</a></li>
+                <li><a href="#">立减300</a></li>
+                <li><a href="#">官方正品</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">3秒速冲</a></li>
+                <li><a href="#">送角阀软管</a></li>
+                <li><a href="#">送角阀软管</a></li>
+                <li><a class="blue" href="#">12大中心仓</a></li>
+                <li><a href="#">蹲坐两用</a></li>
+                <li><a class="blue" href="#">领券减50</a></li>
+                <li><a href="#">全国联保</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">德国品牌</a></li>
+                <li><a href="#">收藏加购</a></li>
+                <li><a href="#">加长型缸体</a></li>
+                <li><a href="#">喷射虹吸</a></li>
+                <li><a href="#">家装狂欢节</a></li>
+                <li><a href="#">AB1287</a></li>
+                <li><a href="#">领券再减</a></li>
+                <li><a href="#">千程入户</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">前景冲力</a></li>
+                <li><a href="#">包安装</a></li>
+                <li><a href="#">土豪直接付款</a></li>
+                <li><a class="blue" href="#">咨询在线客服</a></li>
+                <li><a href="#">赠送原厂配件</a></li>
+                <li><a href="#">新聚汇</a></li>
+                <li><a href="#">吸力哥</a></li>
+                <li><a href="#">九牧正品</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">覆盖区域内</a></li>
+                <li><a href="#">指定1800</a></li>
+                <li><a href="#">晒图返10元</a></li>
+                <li><a href="#">1300城免</a></li>
+                <li><a href="#">久坐舒适</a></li>
+                <li><a href="#">晒图送20元</a></li>
+                <li><a href="#">摩普智能马桶</a></li>
+                <li><a href="#">双杆喷头</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">送空调扇</a></li>
+                <li><a href="#">咨询大惊喜</a></li>
+                <li><a href="#">节水小管家</a></li>
+                <li><a href="#">高端大气</a></li>
+                <li><a class="blue" href="#">科勒授权</a></li>
+                <li><a href="#">超旋风系列</a></li>
+                <li><a href="#">限时升级</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">立减500</a></li>
+                <li><a href="#">赠送角阀软管</a></li>
+                <li><a class="blue" href="#">法恩莎正品</a></li>
+                <li><a class="blue" href="#">12大中西仓</a></li>
+            </ul>
+        </div>
+
+        <div id="list11" class="mylist">
+            <ul>
+                <li><a class="blue" href="#">热卖推荐</a></li>
+                <li><a href="#">高档户型客厅</a></li>
+                <li><a href="#">16CM坐垫</a></li>
+                <li><a href="#">匠心独运</a></li>
+                <li><a href="#">大小户型沙发</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">8.23预售</a></li>
+                <li><a href="#">热销爆款</a></li>
+                <li><a href="#">高档进口牛皮</a></li>
+                <li><a class="blue" href="#">三位可躺</a></li>
+                <li><a href="#">北美进口橡木</a></li>
+                <li><a href="#">全香樟实木</a></li>
+                <li><a href="#">厂家直销</a></li>
+            </ul>
+            </ul>
+            <ul>
+                <li><a href="#">可拆洗</a></li>
+                <li><a href="#">4级抗污</a></li>
+                <li><a href="#">多功能</a></li>
+                <li><a href="#">全实木雕刻</a></li>
+                <li><a href="#">3D玛雅绒</a></li>
+                <li><a href="#">北美橡木</a></li>
+                <li><a href="#">防水防污</a></li>
+                <li><a href="#">都市转角户型</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">多功能扶手</a></li>
+                <li><a href="#">彼爱专利产品</a></li>
+                <li><a href="#">国际设计师</a></li>
+                <li><a href="#">进口头层牛皮</a></li>
+                <li><a class="blue" href="#">经典爆款</a></li>
+                <li><a href="#">可拆洗设计</a></li>
+                <li><a href="#">优质棉麻面料</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">高档超柔绒布内</a></li>
+                <li><a class="blue" href="#">进口橡木框架</a></li>
+                <li><a href="#">欧洲白蜡木</a></li>
+                <li><a href="#">北美黑胡桃</a></li>
+                <li><a href="#">质保3年</a></li>
+            </ul>
+            <ul>
+                <li><a class="blue" href="#">8.29零点</a></li>
+                <li><a href="#">头层牛皮</a></li>
+                <li><a href="#">实木雕花</a></li>
+                <li><a href="#">全拆洗</a></li>
+                <li><a href="#">大师设计</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">20-22号</a></li>
+                <li><a href="#">北美黑胡桃</a></li>
+                <li><a class="blue" href="#">泰国进口实木</a></li>
+                <li><a class="blue" href="#">8.22聚价</a></li>
+                <li><a class="blue" href="#">品质保障</a></li>
+                <li><a href="#">优质绒布</a></li>
+            </ul>
+        </div>
+
+        <div id="list12" class="mylist">
+            <ul>
+                <li><a class="blue" href="#">机控遥控</a></li>
+                <li><a href="#">搪瓷超强内胆</a></li>
+                <li><a href="#">阿里智能</a></li>
+                <li><a href="#">3D速热</a></li>
+                <li><a href="#">热水器狂欢</a></li>
+                <li><a href="#">3D动态加热</a></li>
+                <li><a href="#">金圭经典</a></li>
+                <li><a class="blue" href="#">一级能效</a></li>
+            </ul>
+            <ul>
+                <li><a class="blue" href="#">三档功率可调</a></li>
+                <li><a href="#">送双立人刀</a></li>
+                <li><a href="#">全胆半胆加热</a></li>
+                <li><a href="#">爆款低价购</a></li>
+                <li><a href="#">4倍迅速增容</a></li>
+                <li><a href="#">阿里智能</a></li>
+                <li><a href="#">5昼夜保温</a></li>
+            </ul>
+            </ul>
+            <ul>
+                <li><a href="#">官方正品</a></li>
+                <li><a class="blue" href="#">5昼夜保温</a></li>
+                <li><a href="#">3KW速热</a></li>
+                <li><a href="#">立减200</a></li>
+                <li><a href="#">全国服务热线</a></li>
+                <li><a class="blue" href="#">8月26日</a></li>
+                <li><a href="#">全国服务热线</a></li>
+                <li><a href="#">wifi智能</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">新品抢先购</a></li>
+                <li><a class="blue" href="#">新品上市</a></li>
+                <li><a class="blue" href="#">26号10点</a></li>
+                <li><a href="#">最后一天</a></li>
+                <li><a href="#">美的自营</a></li>
+                <li><a href="#">限时48小时</a></li>
+                <li><a href="#">准时预约</a></li>
+                <li><a class="blue" href="#">官方正品</a></li>
+            </ul>
+            <ul>
+                <li><a class="blue" href="#">唱快淋漓</a></li>
+                <li><a href="#">嗨爆8月</a></li>
+                <li><a href="#">内胆自清洁</a></li>
+                <li><a href="#">8月26号</a></li>
+                <li><a class="blue" href="#">疯抢48小时</a></li>
+                <li><a href="#">爆款预售</a></li>
+                <li><a href="#">26号10点</a></li>
+                <li><a href="#">双2100瓦</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">全国服务热线</a></li>
+                <li><a href="#">嗨爆8月</a></li>
+                <li><a href="#">高温抑菌</a></li>
+                <li><a href="#">三档功率可调</a></li>
+                <li><a href="#">全网爆款</a></li>
+                <li><a class="blue" href="#">以旧换新</a></li>
+                <li><a href="#">8月暑促</a></li>
+            </ul>
+            <ul>
+                <li><a class="blue" href="#">整机8年保修</a></li>
+                <li><a class="blue" href="#">准时预约</a></li>
+                <li><a href="#">WiFi智控</a></li>
+                <li><a class="blue" href="#">狂欢疯抢</a></li>
+                <li><a href="#">疯抢48小时</a></li>
+                <li><a class="blue" href="#">8年包修</a></li>
+                <li><a class="blue" href="#">每日前100</a></li>
+                <li><a href="#">8月26号</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">每日前50</a></li>
+                <li><a href="#">每日前100</a></li>
+                <li><a href="#">限量抢熨烫机</a></li>
+                <li><a href="#">品牌活动价</a></li>
+            </ul>
+        </div>
+
+        <div id="list13" class="mylist">
+            <ul>
+                <li><a href="#">屏大影院</a></li>
+                <li><a href="#">周末</a></li>
+                <li><a href="#">新品特惠</a></li>
+                <li><a href="#">32时电视机</a></li>
+                <li><a href="#">智能网络</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">USB搞轻解</a></li>
+                <li><a href="#">芒果TV在线</a></li>
+                <li><a class="blue" href="#">抢购价</a></li>
+                <li><a href="#">USB解码</a></li>
+                <li><a href="#">32英时</a></li>
+                <li><a href="#">10核</a></li>
+                <li><a href="#">TCL品牌日</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">不要赠品</a></li>
+                <li><a href="#">新品上市</a></li>
+                <li><a href="#">4k硬屏</a></li>
+                <li><a href="#">领100元券</a></li>
+                <li><a href="#">智能高清</a></li>
+                <li><a href="#">8月，酷暑</a></li>
+                <li><a href="#">8月大促</a></li>
+                <li><a href="#">天猫定制</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">智能操作系统</a></li>
+                <li><a href="#">金色外观</a></li>
+                <li><a href="#">三星屏幕</a></li>
+                <li><a class="blue" href="#">客厅爆款</a></li>
+                <li><a href="#">八核配置</a></li>
+                <li><a href="#">限时特惠</a></li>
+            </ul>
+            <ul>
+                <li><a class="blue" href="#">限时特惠</a></li>
+                <li><a href="#">热销爆款</a></li>
+                <li><a href="#">4K全高清</a></li>
+                <li><a href="#">六核智能</a></li>
+                <li><a href="#">14核4K</a></li>
+                <li><a class="blue" href="#">YUNOS</a></li>
+                <li><a href="#">YUNOS</a></li>
+                <li><a href="#">64位处理器</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">YUNOS</a></li>
+                <li><a href="#">微信电视</a></li>
+                <li><a href="#">4K超清</a></li>
+                <li><a href="#">64位真4K</a></li>
+                <li><a href="#">10核机芯</a></li>
+                <li><a href="#">V字黑轴底座</a></li>
+                <li><a href="#">4K超清</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">64位14核</a></li>
+                <li><a href="#">海量影视</a></li>
+                <li><a href="#">人气爆款</a></li>
+                <li><a href="#">限时特惠</a></li>
+                <li><a href="#">真4K屏</a></li>
+                <li><a href="#">65时巨屏</a></li>
+                <li><a href="#">4K超清视界</a></li>
+                <li><a href="#">限时特惠</a></li>
+            </ul>
+            <ul>
+                <li><a class="blue" href="#">55寸旗舰</a></li>
+                <li><a href="#">4K机皇</a></li>
+                <li><a href="#">曲面机皇</a></li>
+                <li><a href="#">轻薄4K</a></li>
+            </ul>
+        </div>
+
+        <div id="list14" class="mylist">
+            <ul>
+                <li><a href="#">高性价比</a></li>
+                <li><a href="#">纳米自洁釉</a></li>
+                <li><a href="#">盖板易拆</a></li>
+                <li><a class="blue" href="#">领券更优惠</a></li>
+                <li><a href="#">全国联保</a></li>
+                <li><a href="#">咨询大惊喜</a></li>
+                <li><a href="#">咨询大惊喜</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">全自动感应</a></li>
+                <li><a href="#">即热式功能</a></li>
+                <li><a href="#">智能护理</a></li>
+                <li><a href="#">官方正品</a></li>
+                <li><a class="blue" href="#">高效节水</a></li>
+                <li><a href="#">立减300</a></li>
+                <li><a href="#">官方正品</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">3秒速冲</a></li>
+                <li><a href="#">送角阀软管</a></li>
+                <li><a href="#">送角阀软管</a></li>
+                <li><a class="blue" href="#">12大中心仓</a></li>
+                <li><a href="#">蹲坐两用</a></li>
+                <li><a class="blue" href="#">领券减50</a></li>
+                <li><a href="#">全国联保</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">德国品牌</a></li>
+                <li><a href="#">收藏加购</a></li>
+                <li><a href="#">加长型缸体</a></li>
+                <li><a href="#">喷射虹吸</a></li>
+                <li><a href="#">家装狂欢节</a></li>
+                <li><a href="#">AB1287</a></li>
+                <li><a href="#">领券再减</a></li>
+                <li><a href="#">千程入户</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">前景冲力</a></li>
+                <li><a href="#">包安装</a></li>
+                <li><a href="#">土豪直接付款</a></li>
+                <li><a class="blue" href="#">咨询在线客服</a></li>
+                <li><a href="#">赠送原厂配件</a></li>
+                <li><a href="#">新聚汇</a></li>
+                <li><a href="#">吸力哥</a></li>
+                <li><a href="#">九牧正品</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">覆盖区域内</a></li>
+                <li><a href="#">指定1800</a></li>
+                <li><a href="#">晒图返10元</a></li>
+                <li><a href="#">1300城免</a></li>
+                <li><a href="#">久坐舒适</a></li>
+                <li><a href="#">晒图送20元</a></li>
+                <li><a href="#">摩普智能马桶</a></li>
+                <li><a href="#">双杆喷头</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">送空调扇</a></li>
+                <li><a href="#">咨询大惊喜</a></li>
+                <li><a href="#">节水小管家</a></li>
+                <li><a href="#">高端大气</a></li>
+                <li><a class="blue" href="#">科勒授权</a></li>
+                <li><a href="#">超旋风系列</a></li>
+                <li><a href="#">限时升级</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">立减500</a></li>
+                <li><a href="#">赠送角阀软管</a></li>
+                <li><a class="blue" href="#">法恩莎正品</a></li>
+                <li><a class="blue" href="#">12大中西仓</a></li>
+            </ul>
+        </div>
+
+        <div id="list15" class="mylist">
+            <ul>
+                <li><a class="blue" href="#">热卖推荐</a></li>
+                <li><a href="#">高档户型客厅</a></li>
+                <li><a href="#">16CM坐垫</a></li>
+                <li><a href="#">匠心独运</a></li>
+                <li><a href="#">大小户型沙发</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">8.23预售</a></li>
+                <li><a href="#">热销爆款</a></li>
+                <li><a href="#">高档进口牛皮</a></li>
+                <li><a class="blue" href="#">三位可躺</a></li>
+                <li><a href="#">北美进口橡木</a></li>
+                <li><a href="#">全香樟实木</a></li>
+                <li><a href="#">厂家直销</a></li>
+            </ul>
+            </ul>
+            <ul>
+                <li><a href="#">可拆洗</a></li>
+                <li><a href="#">4级抗污</a></li>
+                <li><a href="#">多功能</a></li>
+                <li><a href="#">全实木雕刻</a></li>
+                <li><a href="#">3D玛雅绒</a></li>
+                <li><a href="#">北美橡木</a></li>
+                <li><a href="#">防水防污</a></li>
+                <li><a href="#">都市转角户型</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">多功能扶手</a></li>
+                <li><a href="#">彼爱专利产品</a></li>
+                <li><a href="#">国际设计师</a></li>
+                <li><a href="#">进口头层牛皮</a></li>
+                <li><a class="blue" href="#">经典爆款</a></li>
+                <li><a href="#">可拆洗设计</a></li>
+                <li><a href="#">优质棉麻面料</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">高档超柔绒布内</a></li>
+                <li><a class="blue" href="#">进口橡木框架</a></li>
+                <li><a href="#">欧洲白蜡木</a></li>
+                <li><a href="#">北美黑胡桃</a></li>
+                <li><a href="#">质保3年</a></li>
+            </ul>
+            <ul>
+                <li><a class="blue" href="#">8.29零点</a></li>
+                <li><a href="#">头层牛皮</a></li>
+                <li><a href="#">实木雕花</a></li>
+                <li><a href="#">全拆洗</a></li>
+                <li><a href="#">大师设计</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">20-22号</a></li>
+                <li><a href="#">北美黑胡桃</a></li>
+                <li><a class="blue" href="#">泰国进口实木</a></li>
+                <li><a class="blue" href="#">8.22聚价</a></li>
+                <li><a class="blue" href="#">品质保障</a></li>
+                <li><a href="#">优质绒布</a></li>
+            </ul>
+        </div>
+
+        <div id="list16" class="mylist">
+            <ul>
+                <li><a class="blue" href="#">机控遥控</a></li>
+                <li><a href="#">搪瓷超强内胆</a></li>
+                <li><a href="#">阿里智能</a></li>
+                <li><a href="#">3D速热</a></li>
+                <li><a href="#">热水器狂欢</a></li>
+                <li><a href="#">3D动态加热</a></li>
+                <li><a href="#">金圭经典</a></li>
+                <li><a class="blue" href="#">一级能效</a></li>
+            </ul>
+            <ul>
+                <li><a class="blue" href="#">三档功率可调</a></li>
+                <li><a href="#">送双立人刀</a></li>
+                <li><a href="#">全胆半胆加热</a></li>
+                <li><a href="#">爆款低价购</a></li>
+                <li><a href="#">4倍迅速增容</a></li>
+                <li><a href="#">阿里智能</a></li>
+                <li><a href="#">5昼夜保温</a></li>
+            </ul>
+            </ul>
+            <ul>
+                <li><a href="#">官方正品</a></li>
+                <li><a class="blue" href="#">5昼夜保温</a></li>
+                <li><a href="#">3KW速热</a></li>
+                <li><a href="#">立减200</a></li>
+                <li><a href="#">全国服务热线</a></li>
+                <li><a class="blue" href="#">8月26日</a></li>
+                <li><a href="#">全国服务热线</a></li>
+                <li><a href="#">wifi智能</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">新品抢先购</a></li>
+                <li><a class="blue" href="#">新品上市</a></li>
+                <li><a class="blue" href="#">26号10点</a></li>
+                <li><a href="#">最后一天</a></li>
+                <li><a href="#">美的自营</a></li>
+                <li><a href="#">限时48小时</a></li>
+                <li><a href="#">准时预约</a></li>
+                <li><a class="blue" href="#">官方正品</a></li>
+            </ul>
+            <ul>
+                <li><a class="blue" href="#">唱快淋漓</a></li>
+                <li><a href="#">嗨爆8月</a></li>
+                <li><a href="#">内胆自清洁</a></li>
+                <li><a href="#">8月26号</a></li>
+                <li><a class="blue" href="#">疯抢48小时</a></li>
+                <li><a href="#">爆款预售</a></li>
+                <li><a href="#">26号10点</a></li>
+                <li><a href="#">双2100瓦</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">全国服务热线</a></li>
+                <li><a href="#">嗨爆8月</a></li>
+                <li><a href="#">高温抑菌</a></li>
+                <li><a href="#">三档功率可调</a></li>
+                <li><a href="#">全网爆款</a></li>
+                <li><a class="blue" href="#">以旧换新</a></li>
+                <li><a href="#">8月暑促</a></li>
+            </ul>
+            <ul>
+                <li><a class="blue" href="#">整机8年保修</a></li>
+                <li><a class="blue" href="#">准时预约</a></li>
+                <li><a href="#">WiFi智控</a></li>
+                <li><a class="blue" href="#">狂欢疯抢</a></li>
+                <li><a href="#">疯抢48小时</a></li>
+                <li><a class="blue" href="#">8年包修</a></li>
+                <li><a class="blue" href="#">每日前100</a></li>
+                <li><a href="#">8月26号</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">每日前50</a></li>
+                <li><a href="#">每日前100</a></li>
+                <li><a href="#">限量抢熨烫机</a></li>
+                <li><a href="#">品牌活动价</a></li>
+            </ul>
+        </div>
+
+        <div id="list17" class="mylist">
+            <ul>
+                <li><a class="blue" href="#">机控遥控</a></li>
+                <li><a href="#">搪瓷超强内胆</a></li>
+                <li><a href="#">阿里智能</a></li>
+                <li><a href="#">3D速热</a></li>
+                <li><a href="#">热水器狂欢</a></li>
+                <li><a href="#">3D动态加热</a></li>
+                <li><a href="#">金圭经典</a></li>
+                <li><a class="blue" href="#">一级能效</a></li>
+            </ul>
+            <ul>
+                <li><a class="blue" href="#">三档功率可调</a></li>
+                <li><a href="#">送双立人刀</a></li>
+                <li><a href="#">全胆半胆加热</a></li>
+                <li><a href="#">爆款低价购</a></li>
+                <li><a href="#">4倍迅速增容</a></li>
+                <li><a href="#">阿里智能</a></li>
+                <li><a href="#">5昼夜保温</a></li>
+            </ul>
+            </ul>
+            <ul>
+                <li><a href="#">官方正品</a></li>
+                <li><a class="blue" href="#">5昼夜保温</a></li>
+                <li><a href="#">3KW速热</a></li>
+                <li><a href="#">立减200</a></li>
+                <li><a href="#">全国服务热线</a></li>
+                <li><a class="blue" href="#">8月26日</a></li>
+                <li><a href="#">全国服务热线</a></li>
+                <li><a href="#">wifi智能</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">新品抢先购</a></li>
+                <li><a class="blue" href="#">新品上市</a></li>
+                <li><a class="blue" href="#">26号10点</a></li>
+                <li><a href="#">最后一天</a></li>
+                <li><a href="#">美的自营</a></li>
+                <li><a href="#">限时48小时</a></li>
+                <li><a href="#">准时预约</a></li>
+                <li><a class="blue" href="#">官方正品</a></li>
+            </ul>
+            <ul>
+                <li><a class="blue" href="#">唱快淋漓</a></li>
+                <li><a href="#">嗨爆8月</a></li>
+                <li><a href="#">内胆自清洁</a></li>
+                <li><a href="#">8月26号</a></li>
+                <li><a class="blue" href="#">疯抢48小时</a></li>
+                <li><a href="#">爆款预售</a></li>
+                <li><a href="#">26号10点</a></li>
+                <li><a href="#">双2100瓦</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">全国服务热线</a></li>
+                <li><a href="#">嗨爆8月</a></li>
+                <li><a href="#">高温抑菌</a></li>
+                <li><a href="#">三档功率可调</a></li>
+                <li><a href="#">全网爆款</a></li>
+                <li><a class="blue" href="#">以旧换新</a></li>
+                <li><a href="#">8月暑促</a></li>
+            </ul>
+            <ul>
+                <li><a class="blue" href="#">整机8年保修</a></li>
+                <li><a class="blue" href="#">准时预约</a></li>
+                <li><a href="#">WiFi智控</a></li>
+                <li><a class="blue" href="#">狂欢疯抢</a></li>
+                <li><a href="#">疯抢48小时</a></li>
+                <li><a class="blue" href="#">8年包修</a></li>
+                <li><a class="blue" href="#">每日前100</a></li>
+                <li><a href="#">8月26号</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">每日前50</a></li>
+                <li><a href="#">每日前100</a></li>
+                <li><a href="#">限量抢熨烫机</a></li>
+                <li><a href="#">品牌活动价</a></li>
+            </ul>
+        </div>
+
+<!--        滚动图----------------------------------------------------------->
+        <div id="rollPicture">
+            <div th:replace="rollPicture::rollPicture" ></div>
+        </div>
+        </div>
+    </div>
+<!--    所有商品列表-------------------------------------------->
+    <div id="father" class="commodity">
+
+        <div class="commoditylist">
+            <span class="mouldTitle spantitle">平板电视</span>
+            <a class="mouldA" href="#">
+                <div class="mouldComm comm">
+                    <img class="mouldImg" src="img/comm1.jpg" alt="加载失败">
+                    <span class="mouldSpan span1">
+                        [热销]夏普屏PANDA/能猫LE39D71S
+                    </span>
+                    <span class="mouldRed red">
+                        1,874.25
+                    </span>
+                </div>
+            </a>
+            <a href="#">
+                <div class="comm">
+                    <img src="img/comm2.jpg" alt="加载失败">
+                    <span class="span1">
+                        [热销] Changhong/长虹 65S1安卓智
+                    </span>
+                    <span class="red">
+                        1,799.25
+                    </span>
+                </div>
+            </a>
+            <a href="#">
+                <div class="comm">
+                    <img src="img/comm3.jpg" alt="加载失败">
+                    <span class="span1">
+                        [热销]Hisense/海信 LED40EC52
+                    </span>
+                    <span class="red">
+                        1,503.00
+                    </span>
+                </div>
+            </a>
+            <a href="#">
+                <div class="comm">
+                    <img src="img/comm4.jpg" alt="加载失败">
+                    <span class="span1">
+                        [热销]Hisense/海信 LED49EC32
+                    </span>
+                    <span class="red">
+                        1,482.00
+                    </span>
+                </div>
+            </a>
+            <a href="#">
+                <div class="comm comm5">
+                    <img src="img/comm5.jpg" alt="加载失败">
+                    <span class="span1">
+                        [热销]Konka/康佳 LED32S1卧室32
+                    </span>
+                    <span class="red">
+                        8,512.00
+                    </span>
+                </div>
+            </a>
+        </div>
+
+    </div>
+    <div class="end">
+        <img src="img/end.png" alt="加载失败">
+    </div>
+    <!-- 底部信息栏白色那部分 -------------------------------------->
+<!--    <div id="footer1">-->
+<!--    </div>-->
+    <div th:replace="footer1.html::footer1"></div>
+    <!-- 底部信息栏黑色那部分 --------------------------------------->
+<!--    <div id = "footer2">-->
+<!--    </div>-->
+    <div th:replace="footer2.html::footer2"></div>
+</body>
+</html>

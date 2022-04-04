@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../static/css/AdminProductList.css">
+</head>
+<body>
+<span class="black"></span>
+<header>
+    <img src="../static/img/tmallbuy.png" alt="" class="tmallbuy">
+    <ul class="a2">
+        <li><a href="AdminCategoryList.html">天猫后台</a></li>
+        <li><a href="AdminCategoryList.html">分类管理</a></li>
+        <li><a href="AdminUserList.html">用户管理</a></li>
+        <li><a href="AdminOrderList.html">订单管理</a></li>
+    </ul>
+</header>
+<section>
+    <ol class="breadcrumb">
+        <li><a href="AdminCategoryList.html">所有分类</a></li>
+        <li><a href="" id="things_name">平板电视</a></li>
+        <li class="active">产品管理</li>
+    </ol>
+    <table id="product">
+        <thead>
+        <tr>
+            <td id="ID"><strong>ID</strong></td>
+            <td id="photo"><strong>图片</strong></td>
+            <td id="product_name"><strong>产品名称</strong></td>
+            <td id="product_title"><strong>产品小标题</strong></td>
+            <td id="beginning_price"><strong>原价格</strong></td>
+            <td id="off_price"><strong>优惠价格</strong></td>
+            <td id="number"><strong>库存数量</strong></td>
+            <td id="photo_manage"><strong>图片管理</strong></td>
+            <td id="set_attribute"><strong>设置属性</strong></td>
+            <td id="edit"><strong>编辑</strong></td>
+            <td id="delete"><strong>删除</strong></td>
+        </tr>
+        </thead>
+        <tbody id="Tbody">
+        <tr id="tr1">
+            <td id="ID1">1</td>
+            <td>
+                <img src="../static/img/1.jpg" id="photo1">
+            </td>
+            <td id="product_name1">1</td>
+            <td id="product_title1">1</td>
+            <td id="beginning_price1">1</td>
+            <td id="off_price1">1</td>
+            <td id="number1">1</td>
+            <td id="photo_manage1">
+                <a href="AdminProductImageList.html">
+                    <img src="../img/图片.png">
+                </a>
+            </td>
+            <td id="set_attribute1">
+                <a href="AdminProductEditPropertyValue.html">
+                    <img src="../img/属性管理.png">
+                </a>
+            </td>
+            <td id="edit1">
+                <a href="AdminProductEdit.html">
+                    <img src="../img/编辑.png">
+                </a>
+            </td>
+            <td id="delete1" onclick="Delete()">
+                <a href="">
+                    <img src="../img/删除.png">
+                </a>
+            </td>
+        </tr>
+        <tr id="tr2">
+            <td id="ID2">1</td>
+            <td>
+                <img src="../static/img" id="photo2">
+            </td>
+            <td id="product_name2">1</td>
+            <td id="product_title2">1</td>
+            <td id="beginning_price2">1</td>
+            <td id="off_price2">1</td>
+            <td id="number2">1</td>
+            <td id="photo_manage2">
+                <a href="AdminProductImageList.html">
+                    <img src="../img/图片.png">
+                </a>
+            </td>
+            <td id="set_attribute2">
+                <a href="AdminProductEditPropertyValue.html">
+                    <img src="../img/属性管理.png">
+                </a>
+            </td>
+            <td id="edit2">
+                <a href="AdminProductEdit.html">
+                    <img src="../img/编辑.png">
+                </a>
+            </td>
+            <td id="delete2" onclick="Delete()">
+                <a href="">
+                    <img src="../img/删除.png">
+                </a>
+            </td>
+        </tr>
+        <tr id="tr3">
+            <td id="ID3">1</td>
+            <td>
+                <img src="../static/img" id="photo3">
+            </td>
+            <td id="product_name3">1</td>
+            <td id="product_title3">1</td>
+            <td id="beginning_price3">1</td>
+            <td id="off_price3">1</td>
+            <td id="number3">1</td>
+            <td id="photo_manage3">
+                <a href="AdminProductImageList.html">
+                    <img src="../img/图片.png">
+                </a>
+            </td>
+            <td id="set_attribute3">
+                <a href="AdminProductEditPropertyValue.html">
+                    <img src="../img/属性管理.png">
+                </a>
+            </td>
+            <td id="edit3">
+                <a href="AdminProductEdit.html">
+                    <img src="../img/编辑.png">
+                </a>
+            </td>
+            <td id="delete3" onclick="Delete()">
+                <a href="">
+                    <img src="../img/删除.png">
+                </a>
+            </td>
+        </tr>
+        <tr id="tr4">
+            <td id="ID4">1</td>
+            <td>
+                <img src="../static/img" id="photo4">
+            </td>
+            <td id="product_name4">1</td>
+            <td id="product_title4">1</td>
+            <td id="beginning_price4">1</td>
+            <td id="off_price4">1</td>
+            <td id="number4">1</td>
+            <td id="photo_manage4">
+                <a href="AdminProductImageList.html">
+                    <img src="../img/图片.png">
+                </a>
+            </td>
+            <td id="set_attribute4">
+                <a href="AdminProductEditPropertyValue.html">
+                    <img src="../img/属性管理.png">
+                </a>
+            </td>
+            <td id="edit4">
+                <a href="AdminProductEdit.html">
+                    <img src="../img/编辑.png">
+                </a>
+            </td>
+            <td id="delete4" onclick="Delete()">
+                <a href="">
+                    <img src="../img/删除.png">
+                </a>
+            </td>
+        </tr>
+        <tr id="tr5">
+            <td id="ID5">1</td>
+            <td>
+                <img src="../static/img" id="photo5">
+            </td>
+            <td id="product_name5">1</td>
+            <td id="product_title5">1</td>
+            <td id="beginning_price5">1</td>
+            <td id="off_price5">1</td>
+            <td id="number5">1</td>
+            <td id="photo_manage5">
+                <a href="AdminProductImageList.html">
+                    <img src="../img/图片.png">
+                </a>
+            </td>
+            <td id="set_attribute5">
+                <a href="AdminProductEditPropertyValue.html">
+                    <img src="../img/属性管理.png">
+                </a>
+            </td>
+            <td id="edit5">
+                <a href="AdminProductEdit.html">
+                    <img src="../img/编辑.png">
+                </a>
+            </td>
+            <td id="delete5" onclick="Delete()">
+                <a href="">
+                    <img src="../img/删除.png">
+                </a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <ul id="page">
+        <li><a id="fisrt" class="first" href="" onclick="return update(1)"> << </a></li>
+        <li><a id="before" class="before" href="" onclick="return before()"> < </a></li>
+        <li><a id="page1" href="" onclick="return update(this.text)"> 1 </a></li>
+        <li><a id="page2" href="" onclick="return update(this.text)"> 2 </a></li>
+        <li><a id="page3" href="" onclick="return update(this.text)"> 3 </a></li>
+        <li><a id="page4" href="" onclick="return update(this.text)"> 4 </a></li>
+        <li><a id="page5" href="" onclick="return update(this.text)"> 5 </a></li>
+        <li><a id="next" href="" onclick="return next()"> > </a></li>
+        <li><a id="finaly" href="" onclick="return last()"> >> </a></li>
+    </ul>
+    <div id="new_class">新增分类</div>
+    <form method="post" id="addForm">
+        <table class="addTable">
+            <tbody>
+            <tr>
+                <td>产品名称</td>
+                <td><input id="name" name="name" type="text" class="name"></td>
+            </tr>
+            <tr>
+                <td>产品小标题	</td>
+                <td><input id="title" name="title" type="text" class="title"></td>
+            </tr>
+            <tr>
+                <td>原价格</td>
+                <td><input id="price1" name="price1" type="text" class="price1"></td>
+            </tr>
+            <tr>
+                <td>优惠价格</td>
+                <td><input id="price2" name="price2" type="text" class="price2"></td>
+            </tr>
+            <tr>
+                <td>库存</td>
+                <td><input id="total_number" name="total_number" type="text" class="total_number"></td>
+            </tr>
+            <tr class="submitTR">
+                <td colspan="2" align="center">
+                    <button type="submit" class="btn">提 交</button>
+                </td>
+            </tr>
+            </tbody></table>
+    </form>
+</section>
+<script src="../static/javascript/AdminProductList.js"></script>
+</body>
+</html>
