@@ -1,9 +1,4 @@
-$(document).ready(function(){
-    $("#footer1").load("footer1.html");
-    $("#footer2").load("footer2.html");
-    $("#nav").load("nav.html");
-    $("#searchtop").load("searchtop.html")
-});
+
 
 /** 切换产品详情图片的功能**/
 $(function(){

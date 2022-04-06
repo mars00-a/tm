@@ -3,17 +3,17 @@
 <head>
     <meta charset="utf-8">
     <title>付款成功</title>
-    <script src = ../static/javascript/jquery.min.js> </script>
-    <script src="../static/javascript/forepayed.js"> </script>
-    <link rel="stylesheet" href="../static/css/forepayed.css">
+    <script src = javascript/jquery.min.js> </script>
+    <script src="javascript/forepayed.js"> </script>
+    <link rel="stylesheet" href="css/forepayed.css">
     <style>
         @font-face {
             font-family: 'icomoon';
-            src: url('../static/fonts/icomoon.eot?qv4n05');
-            src: url('../static/fonts/icomoon.eot?qv4n05#iefix') format('embedded-opentype'),
-                url('../static/fonts/icomoon.ttf?qv4n05') format('truetype'),
-                url('../static/fonts/icomoon.woff?qv4n05') format('woff'),
-                url('../static/fonts/icomoon.svg?qv4n05#icomoon') format('svg');
+            src: url('fonts/icomoon.eot?qv4n05');
+            src: url('fonts/icomoon.eot?qv4n05#iefix') format('embedded-opentype'),
+                url('fonts/icomoon.ttf?qv4n05') format('truetype'),
+                url('fonts/icomoon.woff?qv4n05') format('woff'),
+                url('fonts/icomoon.svg?qv4n05#icomoon') format('svg');
             font-weight: normal;
             font-style: normal;
             font-display: block;
@@ -23,12 +23,11 @@
 
 <body>
     <!--导航栏---------------------------------------------->
-    <div id="nav">
-    </div>
+    <div th:replace="nav.html::nav"></div>
     
     <!-- 搜索框那一行 --------------------------------------->
     <div class="search">
-        <a href="#"><img src="../static/img/simpleLogo.png"></a>
+        <a href="#"><img src="img/simpleLogo.png"></a>
         <div class="searchBox">
             <input type="text" placeholder="搜索内容">
             <a href="#"><button type="submit">搜天猫</button></a>
@@ -56,7 +55,7 @@
     <!--主体------------------------------------------------>
     <div class="main">
         <div class="paySuccess" >
-            <img src="../static/img/paySuccess.png" alt="加载失败" >
+            <img src="img/paySuccess.png" alt="加载失败" >
             <span >您已成功付款</span>
         </div>
         <div class="ifo">
@@ -75,7 +74,7 @@
             </div>
         </div>
         <div class="warn">
-            <img src="../static/img/warning.png" alt="加载失败">
+            <img src="img/warning.png" alt="加载失败">
             <b>安全提醒：</b>
             下单后，
             <span>用QQ给您发送链接办理退款的都是骗子！</span>
@@ -83,12 +82,8 @@
         </div>
     </div>
 
-    <!-- 底部信息栏白色那部分 ------------------------------>
-    <div id="footer1">
-    </div>
-    
-    <!-- 底部信息栏黑色那部分 ------------------------------>
-    <div id = "footer2">
+    <div th:replace="footer1.html::footer1"></div>
+    <div th:replace="footer2.html::footer2"></div>
         
     </div>
 </body>

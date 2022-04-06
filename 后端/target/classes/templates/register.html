@@ -8,17 +8,17 @@
 <head>
     <meta charset="utf-8">
     <title>天猫注册</title>
-    <script src = ../static/javascript/jquery.min.js> </script>
-    <script src="../static/javascript/register.js"> </script>
-    <link rel="stylesheet" href="../static/css/register.css ">
+    <script src = javascript/jquery.min.js> </script>
+    <script src="javascript/register.js"> </script>
+    <link rel="stylesheet" href="css/register.css ">
     <style>
         @font-face {
             font-family: 'icomoon';
-            src: url('../static/fonts/icomoon.eot?qv4n05');
-            src: url('../static/fonts/icomoon.eot?qv4n05#iefix') format('embedded-opentype'),
-                url('../static/fonts/icomoon.ttf?qv4n05') format('truetype'),
-                url('../static/fonts/icomoon.woff?qv4n05') format('woff'),
-                url('../static/fonts/icomoon.svg?qv4n05#icomoon') format('svg');
+            src: url('fonts/icomoon.eot?qv4n05');
+            src: url('fonts/icomoon.eot?qv4n05#iefix') format('embedded-opentype'),
+                url('fonts/icomoon.ttf?qv4n05') format('truetype'),
+                url('fonts/icomoon.woff?qv4n05') format('woff'),
+                url('fonts/icomoon.svg?qv4n05#icomoon') format('svg');
             font-weight: normal;
             font-style: normal;
             font-display: block;
@@ -28,11 +28,10 @@
 
 <body>
     <!-- 最上方导航栏 -->
-    <div id="nav">
-    </div>
+    <div th:replace="nav.html::nav"></div>
     <!-- 搜索框那一行 -->
     <div class="search">
-        <a href="#"><img src="../static/img/simpleLogo.png"></a>
+        <a href="#"><img src="img/simpleLogo.png"></a>
         <div class="searchBox">
             <input type="text" placeholder="搜索内容">
             <a href="#"><button type="submit">搜天猫</button></a>
@@ -57,7 +56,7 @@
         <div class="clear"></div>
     </div>
     <!-- 信息获取表单 -->
-    <form name="info" onsubmit="return check()" action="../static/img/cateye.png" method="post" class="registerForm">
+    <form name="info" onsubmit="return check()" action="img/cateye.png" method="post" class="registerForm">
         <div id="alert" class="alert">
             <span id="spanalert"></span>
         </div>
@@ -94,11 +93,7 @@
         </table>
     </form>
     <!-- 底部信息栏白色那部分 -->
-    <div id="footer1">
-    </div>
-    <!-- 底部信息栏黑色那部分 -->
-    <div id = "footer2">
-<!--        <iframe algin="center" width="100%" height = "220px" src="footer2.html"  frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>-->
-    </div>
+    <div th:replace="footer1.html::footer1"></div>
+    <div th:replace="footer2.html::footer2"></div>
 </body>
 </html>

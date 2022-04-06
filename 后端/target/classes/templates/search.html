@@ -1,19 +1,19 @@
-<html lang="chinese">
+
 <head>
     <meta charset="utf-8">
     <title>搜索页面</title>
-    <script src = ../static/javascript/jquery.min.js> </script>
-    <script src = ../static/javascript/axios.min.js> </script>
-    <script type="text/javascript" src="../static/javascript/search.js"> </script>
-    <link rel="stylesheet" href="../static/css/search.css ">
+    <script src = javascript/jquery.min.js> </script>
+    <script src = javascript/axios.min.js> </script>
+    <script type="text/javascript" src="javascript/search.js"> </script>
+    <link rel="stylesheet" href="css/search.css ">
     <style>
         @font-face {
             font-family: 'icomoon';
-            src: url('../static/fonts/icomoon.eot?qv4n05');
-            src: url('../static/fonts/icomoon.eot?qv4n05#iefix') format('embedded-opentype'),
-            url('../static/fonts/icomoon.ttf?qv4n05') format('truetype'),
-            url('../static/fonts/icomoon.woff?qv4n05') format('woff'),
-            url('../static/fonts/icomoon.svg?qv4n05#icomoon') format('svg');
+            src: url('fonts/icomoon.eot?qv4n05');
+            src: url('fonts/icomoon.eot?qv4n05#iefix') format('embedded-opentype'),
+            url('fonts/icomoon.ttf?qv4n05') format('truetype'),
+            url('fonts/icomoon.woff?qv4n05') format('woff'),
+            url('fonts/icomoon.svg?qv4n05#icomoon') format('svg');
             font-weight: normal;
             font-style: normal;
             font-display: block;
@@ -23,11 +23,10 @@
 
 <body>
 <!-- 最上方导航栏 -------------------------------------------->
-<div id="nav">
-</div>
+<div th:replace="nav.html::nav"></div>
 <!-- 搜索框那一行 ------------------------------------------->
 <div class="search">
-    <a href="#"><img src="../static/img/logo.gif"></a>
+    <a href="#"><img src="img/logo.gif"></a>
     <div class="searchBox">
         <input id="keyword" type="text" placeholder="搜索内容">
         <a href="#"><button onclick = "return check()" id="button" type="submit">搜索</button></a>
@@ -58,7 +57,7 @@
     <div class="commoditylist">
 
         <a class="mouldA" href="#">
-            <img class="mouldImg" src="../static/img/comm1.jpg" alt="加载失败">
+            <img class="mouldImg" src="img/comm1.jpg" alt="加载失败">
             <span class="mouldSpan span1">
                     [热销]夏普屏PANDA/能猫LE39D71S
             </span>
@@ -72,13 +71,10 @@
 
 </div>
 <div class="end">
-    <img src="../static/img/end.png" alt="加载失败">
+    <img src="img/end.png" alt="加载失败">
 </div>
 <!-- 底部信息栏白色那部分 -------------------------------------->
-<div id="footer1">
-</div>
-<!-- 底部信息栏黑色那部分 --------------------------------------->
-<div id = "footer2">
-</div>
+<div th:replace="footer1.html::footer1"></div>
+<div th:replace="footer2.html::footer2"></div>
 </body>
 </html>

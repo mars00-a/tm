@@ -3,16 +3,14 @@
 <head>
     <title>购物车</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <script src="../static/javascript/jquery.min.js"></script>
-    <link href="../static/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../static/css/shopping%20trolley.css" rel="stylesheet">
-    <script src="../static/javascript/bootstrap.min.js"></script>
-    <script src="../static/javascript/shopping%20trolley.js"></script>
+    <script src="javascript/jquery.min.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/shopping%20trolley.css" rel="stylesheet">
+    <script src="javascript/bootstrap.min.js"></script>
+    <script src="javascript/shopping%20trolley.js"></script>
 </head>
 
-<div id="nav">
-
-</div>
+<div th:replace="nav.html::nav"></div>
 <div class="cartDiv">
     <div class="cartTitle pull-right">
         <span>已选商品  (不含运费)</span>
@@ -24,7 +22,7 @@
             <thead>
             <tr>
                 <th class="selectAndImage">
-                    <img src="../static/img/cartNotSelected.png" class="selectAllItem" selectit="false">
+                    <img src="img/cartNotSelected.png" class="selectAllItem" selectit="false">
                     全选
                 </th>
                 <th>商品信息</th>
@@ -37,17 +35,17 @@
             <tbody>
             <tr class="cartProductItemTR" oiid="936" style="background-color: rgb(255, 255, 255);">
                 <td>
-                    <img src="../static/img/cartNotSelected.png" class="cartProductItemIfSelected" oiid="936" selectit="false">
-                    <a href="#nowhere" style="display:none"><img src="../static/img/cartSelected.png"></a>
-                    <img src="../static/img/3665.jpg" class="cartProductImg">
+                    <img src="img/cartNotSelected.png" class="cartProductItemIfSelected" oiid="936" selectit="false">
+                    <a href="#nowhere" style="display:none"><img src="img/cartSelected.png"></a>
+                    <img src="img/3665.jpg" class="cartProductImg">
                 </td>
                 <td>
                     <div class="cartProductLinkOutDiv">
                         <a class="cartProductLink" href="#nowhere">美国iRobot扫地机器人吸尘器全自动家用智能扫地机650 天猫电器城</a>
                         <div class="cartProductLinkInnerDiv">
-                            <img title="支持信用卡支付" src="../static/img/creditcard.png">
-                            <img title="消费者保障服务,承诺7天退货" src="../static/img/7day.png">
-                            <img title="消费者保障服务,承诺如实描述" src="../static/img/promise.png">
+                            <img title="支持信用卡支付" src="img/creditcard.png">
+                            <img title="消费者保障服务,承诺7天退货" src="img/7day.png">
+                            <img title="消费者保障服务,承诺如实描述" src="img/promise.png">
                         </div>
                     </div>
                 </td>
@@ -75,17 +73,17 @@
             </tr>
             <tr class="cartProductItemTR" oiid="935" style="background-color: rgb(255, 255, 255);">
                 <td>
-                    <img src="../static/img/cartNotSelected.png" class="cartProductItemIfSelected" oiid="935" selectit="false">
-                    <a href="#nowhere" style="display:none"><img src="../static/img/cartSelected.png"></a>
-                    <img src="../static/img/8510.jpg" class="cartProductImg">
+                    <img src="img/cartNotSelected.png" class="cartProductItemIfSelected" oiid="935" selectit="false">
+                    <a href="#nowhere" style="display:none"><img src="img/cartSelected.png"></a>
+                    <img src="img/8510.jpg" class="cartProductImg">
                 </td>
                 <td>
                     <div class="cartProductLinkOutDiv">
                         <a class="cartProductLink" href="#nowhere">阔腿裤三件套装女夏装2016新款大码雪纺时尚休闲气质棉麻九分裤潮</a>
                         <div class="cartProductLinkInnerDiv">
-                            <img title="支持信用卡支付" src="../static/img/creditcard.png">
-                            <img title="消费者保障服务,承诺7天退货" src="../static/img/7day.png">
-                            <img title="消费者保障服务,承诺如实描述" src="../static/img/promise.png">
+                            <img title="支持信用卡支付" src="img/creditcard.png">
+                            <img title="消费者保障服务,承诺7天退货" src="img/7day.png">
+                            <img title="消费者保障服务,承诺如实描述" src="img/promise.png">
                         </div>
                     </div>
                 </td>
@@ -115,7 +113,7 @@
         </table>
     </div>
     <div class="cartFoot">
-        <img src="../static/img/cartNotSelected.png" class="selectAllItem" selectit="false">
+        <img src="img/cartNotSelected.png" class="selectAllItem" selectit="false">
         <span>全选</span>
         <!--         <a href="#">删除</a> -->
         <div class="pull-right">
@@ -126,10 +124,6 @@
         </div>
     </div>
 </div>
-<div id="footer1">
-
-</div>
-<div id="footer2">
-
-</div>
+<div th:replace="footer1.html::footer1"></div>
+<div th:replace="footer2.html::footer2"></div>
 </html>

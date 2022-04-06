@@ -1,7 +1,4 @@
-$(document).ready(function(){
-    $("#footer1").load("./footer1.html");
-    $("#footer2").load("./footer2.html");
-});
+
 
 function check() {
     var username = document.forms["info"]["username"].value;

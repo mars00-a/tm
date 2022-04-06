@@ -2,14 +2,12 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>支付页面</title>
-    <link rel="stylesheet" href="../static/css/alipay.css">
-<div id="nav">
-    <iframe align="center" width="100%" height="170" src="nav.html" frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
-</div>
+    <link rel="stylesheet" href="css/alipay.css">
+    <div th:replace="nav.html::nav"></div>
 </head>
 <div class="aliPayPageDiv">
     <div class="aliPayPageLogo">
-        <img src="../static/img/simpleLogo.png" class="pull-left">
+        <img src="img/simpleLogo.png" class="pull-left">
         <div style="clear:both"></div>
     </div>
     <div>
@@ -18,17 +16,13 @@
 		￥419.40</span>
     </div>
     <div>
-        <img src="../static/img/alipay2wei.png" class="aliPayImg">
+        <img src="img/alipay2wei.png" class="aliPayImg">
     </div>
     <div>
         <a href="#nowhere"><button class="confirmPay">确认支付</button></a>
     </div>
 </div>
 <body>
-<div id="footer1">
-    <iframe align="center" width="100%" height="300" src="footer1.html" frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
-</div>
-<div id="footer2">
-    <iframe align="center" width="100%" height="300" src="footer2.html" frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
-</div>/*
+<div th:replace="footer1.html::footer1"></div>
+<div th:replace="footer2.html::footer2"></div>
 </body>
